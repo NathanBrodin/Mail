@@ -38,15 +38,22 @@ Having my own domain, I was keen to link it with a customized email address. Thi
 9. [ ] **`v0.9.0`**: Implement attachment preview
 10. [ ] **`v1.0.0`**: Finalize app
 
+## Funding
+> This project exploits free tiers of multiple services.
+If this project gains in popularity and goes above those free tiers, I will need funding to keep this project going!
+
 ## Installation
 *Instructions coming soon.*
 
 ## Tech Stack
-- **Framework**: *Next.js* - Provides a comprehensive framework for scalable React projects.
-- **Bundler**: *Bun* - Enhances runtime efficiency.
-- **Mail API**: *To be decided*
-- **Styling**: *Tailwind CSS* - Enables quick and flexible styling.
-- **Component Library**: *ui.shadcn* - Facilitates theme customization and upholds strong UI principles.
+- **Deployment**: [Vercel](https://vercel.com/) - For its power and simplicity.
+- **Framework**: [Next.js](https://nextjs.org/) - Provides a comprehensive framework for scalable React projects.
+- **Bundler**: [TurboPack](https://turbo.build/pack) - Faster and more optimized bundler.
+- **Package manager**: [pMPM](https://pnpm.io/) - Enhances runtime efficiency.
+- **Mail API**: [Resend](https://resend.com/home) - The best Email API out here developed by an amazing team.
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - Enables quick and flexible styling.
+- **Component Library**: [ui.shadcn.com](https://ui.shadcn.com/) - Facilitates theme customization and upholds strong UI principles.
+- **Testing**: [Cypress](https://www.cypress.io/) - Helps writing good e2e tests.
 
 ## Contributing
 Given the complexity and scope of this project, every contribution is valued and appreciated.
