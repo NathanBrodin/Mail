@@ -46,14 +46,20 @@ If this project gains in popularity and goes above those free tiers, I will need
 *Instructions coming soon.*
 
 ## Tech Stack
+### Frontend
 - **Deployment**: [Vercel](https://vercel.com/) - For its power and simplicity.
 - **Framework**: [Next.js](https://nextjs.org/) - Provides a comprehensive framework for scalable React projects.
 - **Bundler**: [TurboPack](https://turbo.build/pack) - Faster and more optimized bundler.
 - **Package manager**: [pMPM](https://pnpm.io/) - Enhances runtime efficiency.
-- **Mail API**: [Resend](https://resend.com/home) - The best Email API out here developed by an amazing team.
+- **Mail API (Sending)**: [Resend](https://resend.com/home) - The best Email API out here developed by an amazing team.
+- **Mail API (Receiving)**: [Mail](https://idontknowyet.idk) - To be found (emailjs ?)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) - Enables quick and flexible styling.
 - **Component Library**: [ui.shadcn.com](https://ui.shadcn.com/) - Facilitates theme customization and upholds strong UI principles.
 - **Testing**: [Cypress](https://www.cypress.io/) - Helps writing good e2e tests.
+
+### Backend
+- **Cloud hosting**: [DigitalOcean]() or [Azure]() - Free credits for students
+- **SMTP and IMAP**: [Poste.io]() or [Mail-in-a-Box]() - Fast setup and open source 
 
 ## Contributing
 Given the complexity and scope of this project, every contribution is valued and appreciated.
