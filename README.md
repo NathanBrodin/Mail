@@ -8,6 +8,7 @@
 - **`Spicy Mails`**: Ever sent an email in the heat of the moment and regretted it later? *Spicy Mails* helps by analyzing the emotional tone of your outgoing emails. If it detects high emotion, it suggests postponing the email for an hour to let you reconsider, even softening the tone if needed.
 - **`Personalized UI`**: Tired of the same old email interface? With *Mail*, personalize your experience with a choice of colors, fonts, spacing, and more to suit your style.
 - **`Write Better Mails`**: Compose using Markdown, HTML, or even React. Save and reuse templates for consistent, professional emails.
+- **`Command menu`**: Press `Command+K` to open a spotlight like bar to quick access features of the app.
 
 ## Motivations
 ### Streamlining User Interface
