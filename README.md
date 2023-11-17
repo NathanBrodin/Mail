@@ -1,7 +1,7 @@
 # Mail
 **Mail, refined**
 
-*Mail* reimagines email services by combining the simplicity of Arc Browser with the customization capabilities of Shadcn UI. Our approach simplifies your inbox, sharpens email composition with AI-powered *Pre-send* analysis, and enhances personal expression through extensive UI customization. We introduce a revolutionary Kanban-style interface for managing emails like tasks on a to-do list, making your email interactions smoother and more intuitive. Exciting features like *Spicy Mails* and versatile Markdown/HTML mail editors infuse creativity and thoughtfulness into everyday communication. Embrace a modern, user-centric email service that evolves to meet your changing needs.
+*Mail* introduces a revolutionary new approach to email services, focusing on a Kanban-style interface that transforms your emails into tasks on a to-do list. This innovative concept makes email interactions smoother, more intuitive, and aligned with modern productivity methods. We blend a user-friendly design with extensive customization options, streamlining your inbox and enhancing email composition with AI-powered Pre-send analysis. Alongside, we offer features like Spicy Mails and versatile Markdown/HTML mail editors to add creativity and thoughtfulness to your everyday communication. Experience a fresh perspective on email services that evolve with your needs.
 
 ## Key Features
 - **`Pre-send`**: Our AI examines your email's grammar, tone, and overall message before sending, ensuring your communication is on point.
