@@ -1,2 +1,1 @@
 bun run format:check
-bun run build
