@@ -16,11 +16,14 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.5.4",
     "@sentry/nextjs": "^7.99.0",
+    "@types/negotiator": "^0.6.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "geist": "^1.2.1",
     "lucide-react": "^0.321.0",
+    "negotiator": "^0.6.3",
     "next": "14.1.0",
     "next-themes": "^0.2.1",
     "react": "^18",
