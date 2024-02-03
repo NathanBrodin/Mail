@@ -6,6 +6,9 @@ on:
       - main
       - dev
 
+env:
+  NODE_VERSION: 20
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -18,7 +21,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install bun
         uses: oven-sh/setup-bun@v1
@@ -39,7 +42,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install bun
         uses: oven-sh/setup-bun@v1
