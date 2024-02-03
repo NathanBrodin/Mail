@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { i18n, Locale } from '@/i18n-config';
 import { GeistSans } from 'geist/font/sans';
-import './globals.css';
+import '../globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { UserProvider } from '@auth0/nextjs-auth0/client';
 
