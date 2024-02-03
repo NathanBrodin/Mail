@@ -1,0 +1,76 @@
+name: End to end Cypress tests
+
+on: [push, pull_request]
+
+env:
+  NODE_VERSION: 20
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node-18.16.0-chrome-114.0.5735.133-1-ff-114.0.2-edge-114.0.1823.51-1
+      options: --user 1001
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Cypress install
+        uses: cypress-io/github-action@v6
+        with:
+          runTests: false
+
+      - name: Install bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install dependencies
+        run: bun install
+    
+      - name: Build the app
+        run: bun run build
+
+      - name: Save build folder
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          if-no-files-found: error
+          path: .next
+    
+  ui-chrome-tests:
+    timeout-minutes: 15
+
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node-18.16.0-chrome-114.0.5735.133-1-ff-114.0.2-edge-114.0.1823.51-1
+      options: --user 1001
+    needs: install
+
+    strategy:
+      fail-fast: false
+      matrix:
+      # run copies of the current job in parallel
+        containers: [1, 2, 3, 4, 5]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Download the build folders
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: .next
+
+      - name: "E2E Tests - Chrome"
+        uses: cypress-io/github-action@v6
+        with:
+          start: bun run start
+          browser: chrome
+          wait-on: "http://localhost:3000"
+          wait-on-timeout: 120
+          parallel: true
+          record: true
+          group: "UI - Chrome"
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
