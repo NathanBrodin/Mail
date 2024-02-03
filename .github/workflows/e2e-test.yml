@@ -58,6 +58,9 @@ jobs:
         with:
           name: build
           path: .next
+    
+      - name: Install bun
+        uses: oven-sh/setup-bun@v1
 
       - name: "E2E Tests - Chrome"
         uses: cypress-io/github-action@v6
