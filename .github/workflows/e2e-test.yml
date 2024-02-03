@@ -59,6 +59,9 @@ jobs:
           name: build
           path: .next
     
+      - name: Install unzip
+        run: sudo apt-get install unzip
+
       - name: Install bun
         uses: oven-sh/setup-bun@v1
 
