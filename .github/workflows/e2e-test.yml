@@ -47,7 +47,7 @@ jobs:
       fail-fast: false
       matrix:
       # run copies of the current job in parallel
-        containers: [1, 2, 3, 4, 5]
+        containers: [1]
 
     steps:
       - name: Checkout
@@ -62,6 +62,8 @@ jobs:
       - name: "E2E Tests - Chrome"
         uses: cypress-io/github-action@v6
         with:
+        # we have already installed all dependencies above
+          install: false
           start: bun run start
           browser: chrome
           wait-on: "http://localhost:3000"
