@@ -16,11 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Cypress install
-        uses: cypress-io/github-action@v6
-        with:
-          runTests: false
-
       - name: Install bun
         uses: oven-sh/setup-bun@v1
 
