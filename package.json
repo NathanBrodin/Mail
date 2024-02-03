@@ -16,6 +16,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^3.5.0",
     "@formatjs/intl-localematcher": "^0.5.4",
     "@sentry/nextjs": "^7.99.0",
     "@types/negotiator": "^0.6.3",
