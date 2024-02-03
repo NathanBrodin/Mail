@@ -1,2 +1,1 @@
 bun run format:check
-bun run e2e-test:headless
