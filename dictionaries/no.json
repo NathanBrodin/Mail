@@ -1,9 +1,9 @@
 {
-  "server-component": {
-    "welcome": "Welcome"
+  "home": {
+    "title": "Hjem"
   },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
+  "discover": {
+    "title": "Mail, raffinert",
+    "subtitle": "Se e-posten din på en ny måte"
   }
 }

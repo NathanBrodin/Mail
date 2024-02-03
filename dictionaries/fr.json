@@ -1,9 +1,9 @@
 {
-  "server-component": {
-    "welcome": "Welcome"
+  "home": {
+    "title": "Accueil"
   },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
+  "discover": {
+    "title": "Mail, affiné",
+    "subtitle": "Affichez votre courrier d'une nouvelle façon"
   }
 }

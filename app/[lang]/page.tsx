@@ -1,18 +1,16 @@
+import LocaleSwitcher from '@/components/locale-switcher';
+import { getDictionary } from '@/lib/get-dictionary';
+import { PageProps } from '@/lib/types/page-props';
 import Link from 'next/link';
-import { withPageAuthRequired, getSession } from '@auth0/nextjs-auth0';
 
-export default withPageAuthRequired(
-  async function Page() {
-    const session = await getSession();
+export default async function Home({ params: { lang } }: PageProps) {
+  const { home } = await getDictionary(lang);
 
-    return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1>Home</h1>
-
-        <pre>{JSON.stringify(session?.user, null, 2)}</pre>
-        <Link href="/api/auth/logout">Log out</Link>
-      </main>
-    );
-  },
-  { returnTo: '/discover' }
-);
+  return (
+    <main className="flex min-h-screen flex-col items-center p-24 gap-12">
+      <h1>{home.title}</h1>
+      <Link href="/api/auth/logout">Log out</Link>
+      <LocaleSwitcher />
+    </main>
+  );
+}
