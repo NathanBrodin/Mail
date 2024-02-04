@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 export default async function Discover({ params: { lang } }: PageProps) {
   const { discover } = await getDictionary(lang);
-  const session = await getServerSession()
-  const user = session?.user
+  const session = await getServerSession();
+  const user = session?.user;
 
   return (
     <div>
