@@ -3,7 +3,7 @@ import { i18n, Locale } from '@/i18n-config';
 import { GeistSans } from 'geist/font/sans';
 import '../globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
-import { UserProvider } from '@auth0/nextjs-auth0/client';
+import Providers from '../providers';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -24,9 +24,9 @@ export default function RootLayout({
   return (
     <html lang={params.lang}>
       <body className={GeistSans.className}>
-        <ThemeProvider>
-          <UserProvider>{children}</UserProvider>
-        </ThemeProvider>
+        <Providers>
+          <ThemeProvider>{children}</ThemeProvider>
+        </Providers>
       </body>
     </html>
   );

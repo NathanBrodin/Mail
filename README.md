@@ -14,6 +14,18 @@ Then, install the dependencies:
 bun install
 ```
 
+### Authentication
+copy the `.env.example` file to `.env.local` and fill in the required fields.
+
+You can find Auth0 credentials in the [Auth0 Dashboard](https://manage.auth0.com/dashboard/eu/dev-3z3z3z3z/applications/)
+
+To create the `NEXTAUTH_SECRET` you can use the following command:
+```bash
+openssl rand -base64 32
+```
+
+More info in [NextAuth.js documentation](https://next-auth.js.org/deployment)
+
 ## Getting Started
 
 First, run the development server:
