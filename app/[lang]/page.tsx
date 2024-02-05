@@ -15,7 +15,7 @@ export default async function Home({ params: { lang } }: PageProps) {
       <h1>{home.title}</h1>
 
       <pre>{JSON.stringify(user, null, 2)}</pre>
-      <Link href="/auth/signin">{auth.signout}</Link>
+      <Link href="/api/auth/signout">{auth.signout}</Link>
       <LocaleSwitcher />
     </main>
   );
