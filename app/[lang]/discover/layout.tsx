@@ -1,4 +1,4 @@
-import NavBar from "./components/nav-bar";
+import NavBar from './components/nav-bar';
 
 export default function DiscoverLayout({
   children,
@@ -6,7 +6,7 @@ export default function DiscoverLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className='w-full bg-slate-900 min-h-screen text-white'>
+    <section className="w-full bg-slate-900 min-h-screen text-white">
       <NavBar />
       {children}
     </section>
