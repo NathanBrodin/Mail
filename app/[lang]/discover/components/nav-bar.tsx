@@ -5,6 +5,7 @@ import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import AppLogo from '@/components/ui/app-logo';
 import Link from 'next/link';
+import { Icons } from '@/components/ui/icons';
 
 const navigation = [
   { name: 'Features', href: '#' },
@@ -31,7 +32,9 @@ export default function NavBar() {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            {!mobileMenuOpen && (
+                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            )}
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12 text-gray-100">
@@ -39,15 +42,21 @@ export default function NavBar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium leading-6 "
+              className="text-sm font-medium leading-6 hover:text-gray-300"
             >
               {item.name}
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="#" className="text-sm font-semibold leading-6 ">
-            Log in <span aria-hidden="true">&rarr;</span>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center">
+          <Link href="https://github.com/NathanBrodin/Mail">
+            <Icons.gitHub className="mr-6 h-6 w-6 text-gray-300" />
+          </Link>
+          <Link
+            href="#"
+            className="rounded-md bg-secondary-accent-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-accent-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-accent-600"
+          >
+            Sign in <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
       </nav>
@@ -60,7 +69,7 @@ export default function NavBar() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-slate-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link href="/discover" className="-m-1.5 p-1.5">
+            <Link href="/discover" className="-m-1.5 p-1.5 text-white">
               <AppLogo />
             </Link>
             <button
@@ -88,9 +97,9 @@ export default function NavBar() {
               <div className="py-6 text-gray-100">
                 <Link
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:bg-gray-800"
+                  className="rounded-md bg-secondary-accent-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-accent-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-accent-600"
                 >
-                  Log in
+                  Sign in <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>
             </div>
