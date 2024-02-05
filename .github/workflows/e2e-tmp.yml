@@ -15,7 +15,6 @@ jobs:
       - name: Cypress install
         uses: cypress-io/github-action@v6
         with:
-          install: false
           runTests: false
       
       - name: Install bun
