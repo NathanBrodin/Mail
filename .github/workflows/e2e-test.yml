@@ -64,9 +64,6 @@ jobs:
     needs: install
     strategy:
       fail-fast: false
-      matrix:
-        # run copies of the current job in parallel
-        containers: [1, 2, 3, 4, 5]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -86,7 +83,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: build
+          path: .next
 
       - name: Node info
         run: node -v
@@ -103,7 +100,6 @@ jobs:
           wait-on-timeout: 120
           browser: chrome
           record: true
-          parallel: true
           group: "UI - Chrome"
 
   ui-chrome-mobile-tests:
@@ -115,9 +111,6 @@ jobs:
     needs: install
     strategy:
       fail-fast: false
-      matrix:
-        # run copies of the current job in parallel
-        containers: [1, 2, 3, 4, 5]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -125,13 +118,19 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8        
+          version: 8 
+          
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
 
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: build
+          path: .next
 
       - name: "UI Tests - Chrome - Mobile"
         uses: cypress-io/github-action@v6
@@ -142,7 +141,6 @@ jobs:
           wait-on-timeout: 120
           browser: chrome
           record: true
-          parallel: true
           group: "UI - Chrome - Mobile"
 
   ui-firefox-tests:
@@ -154,9 +152,6 @@ jobs:
     needs: install
     strategy:
       fail-fast: false
-      matrix:
-        # run copies of the current job in parallel
-        containers: [1, 2, 3, 4, 5]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -166,11 +161,17 @@ jobs:
         with:
           version: 8
 
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: build
+          path: .next
 
       - name: "UI Tests - Firefox"
         uses: cypress-io/github-action@v6
@@ -180,7 +181,6 @@ jobs:
           wait-on-timeout: 120
           browser: firefox
           record: true
-          parallel: true
           group: "UI - Firefox"
 
   ui-firefox-mobile-tests:
@@ -192,9 +192,6 @@ jobs:
     needs: install
     strategy:
       fail-fast: false
-      matrix:
-        # run copies of the current job in parallel
-        containers: [1, 2, 3, 4, 5]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -204,11 +201,17 @@ jobs:
         with:
           version: 8
 
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: build
+          path: .next
 
       - name: "UI Tests - Firefox - Mobile"
         uses: cypress-io/github-action@v6
@@ -219,5 +222,4 @@ jobs:
           wait-on-timeout: 120
           browser: firefox
           record: true
-          parallel: true
           group: "UI - Firefox - Mobile"
