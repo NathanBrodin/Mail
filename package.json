@@ -9,6 +9,7 @@
     "e2e-test": "cypress open",
     "dev:test": "next dev",
     "e2e-test:headless": "start-server-and-test dev:test http://localhost:3000 \"cypress run --e2e --reporter junit\"",
+    "e2e-test:ci": "cypress run --e2e",
     "lint": "next lint",
     "format:check": "prettier --check .",
     "prettier": "prettier --write .",
