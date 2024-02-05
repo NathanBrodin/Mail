@@ -51,7 +51,8 @@ export default function Features() {
                 A better workflow
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-200">
-                Todays email services still have interfaces from decades ago. As user needs have evolved, so should the tools they use.
+                Todays email services still have interfaces from decades ago. As
+                user needs have evolved, so should the tools they use.
               </p>
             </div>
           </div>
@@ -67,8 +68,10 @@ export default function Features() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-200 lg:max-w-lg">
               <p>
-              Mail is a modern email client that aims to provide a better workflow for managing your emails.
-              Meet a new way to manage your emails, a way that is more efficient, more intuitive, and more enjoyable.
+                Mail is a modern email client that aims to provide a better
+                workflow for managing your emails. Meet a new way to manage your
+                emails, a way that is more efficient, more intuitive, and more
+                enjoyable.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-300">
                 <li className="flex gap-x-3">
@@ -80,7 +83,9 @@ export default function Features() {
                     <strong className="font-semibold text-gray-100">
                       Integrate
                     </strong>{' '}
-                    with your existing emails addresses. Mail provide integration with Gmail and Outlook, as well as a custom @brodin.dev email address.
+                    with your existing emails addresses. Mail provide
+                    integration with Gmail and Outlook, as well as a custom
+                    @brodin.dev email address.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -92,7 +97,8 @@ export default function Features() {
                     <strong className="font-semibold text-gray-100">
                       Private, by nature.
                     </strong>{' '}
-                    Mail access directly your email servers, no email content is stored anywhere.
+                    Mail access directly your email servers, no email content is
+                    stored anywhere.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -104,7 +110,8 @@ export default function Features() {
                     <strong className="font-semibold text-gray-100">
                       Make it yours.
                     </strong>{' '}
-                    Mails come with extensive customization options, allowing to tailor your inbox that correspond to you.
+                    Mails come with extensive customization options, allowing to
+                    tailor your inbox that correspond to you.
                   </span>
                 </li>
               </ul>
@@ -119,7 +126,8 @@ export default function Features() {
                 Still not convinced?
               </h2>
               <p className="mt-6">
-                Mail is 100% free, and will always be. No ads, no tracking, no data mining. Just a better email client.
+                Mail is 100% free, and will always be. No ads, no tracking, no
+                data mining. Just a better email client.
               </p>
             </div>
           </div>
