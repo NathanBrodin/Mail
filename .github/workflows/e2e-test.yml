@@ -1,4 +1,4 @@
-name: Code check
+name: End to End Tests
 
 on: push
 
@@ -6,9 +6,9 @@ env:
   NODE_VERSION: 20
 
 jobs:
-  lint:
+  install:
     runs-on: ubuntu-latest
-    name: bun lint
+    name: Install
     steps:
       - uses: actions/checkout@v3
         with:
@@ -25,25 +25,20 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - run: bun run lint
+      - name: Install cypress
+        run: bunx cypress install
 
-  format:
+  test:
     runs-on: ubuntu-latest
-    name: bun format:check
+    needs: install
+    name: Test
     steps:
-      - uses: actions/checkout@v3
+      - name: Run tests
+        run: bun run e2e-test:headless
+
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        if: failure()
         with:
-          fetch-depth: 0
-
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
-      - name: Install bun
-        uses: oven-sh/setup-bun@v1
-
-      - name: Install dependencies
-        run: bun install
-
-      - run: bun run format:check
+          name: screenshots
+          path: cypress/screenshots
