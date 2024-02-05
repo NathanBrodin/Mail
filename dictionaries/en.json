@@ -1,4 +1,20 @@
 {
+  "auth": {
+    "signin": {
+      "title": "Sign in to your account",
+      "subtitle": "Enter your email below to create your account",
+      "emailPlaceholder": "name@example.com",
+      "signinWithEmail": "Sign in with email",
+      "or": "OR CONTINUE WITH",
+      "continue": "By clicking continue, you agree to our",
+      "terms": "Terms of Service",
+      "and": "and",
+      "privacy": "Privacy Policy",
+      "quote": "Mails needed a change, so I made it.",
+      "author": "Nathan Brodin"
+    },
+    "signout": "Sign out"
+  },
   "home": {
     "title": "Home"
   },

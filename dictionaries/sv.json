@@ -1,9 +1,25 @@
 {
+  "auth": {
+    "signin": {
+      "title": "Logga in på ditt konto",
+      "subtitle": "Ange din e-postadress nedan för att skapa ditt konto",
+      "emailPlaceholder": "namn@example.com",
+      "signinWithEmail": "Logga in med e-post",
+      "or": "ELLER FORTSÄTT MED",
+      "continue": "Genom att klicka på Fortsätt godkänner du våra",
+      "terms": "Användarvillkor",
+      "and": "och",
+      "privacy": "Integritetspolicy",
+      "quote": "Mejlen behövde en förändring, så jag gjorde det.",
+      "author": "Nathan Brodin"
+    },
+    "signout": "Logga ut"
+  },
   "home": {
     "title": "Hem"
   },
   "discover": {
-    "title": "Mail, förfinad",
-    "subtitle": "Se din e-post på ett nytt sätt"
+    "title": "Post, förfinad",
+    "subtitle": "Se din post på ett nytt sätt"
   }
 }

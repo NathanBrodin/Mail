@@ -4,22 +4,22 @@ import { getToken } from 'next-auth/jwt';
 import { Locale, i18n } from '@/i18n-config';
 import { CustomMiddleware } from './chain';
 
-const protectedPaths = ['/discover'];
+const unprotectedPaths = ['/discover', '/auth'];
 
-function getProtectedRoutes(protectedPaths: string[], locales: Locale[]) {
-  let protectedPathsWithLocale = [...protectedPaths];
+function getUnprotectedRoutes(unprotectedPaths: string[], locales: Locale[]) {
+  let unprotectedPathsWithLocale = [...unprotectedPaths];
 
-  protectedPaths.forEach((route) => {
+  unprotectedPaths.forEach((route) => {
     locales.forEach(
       (locale) =>
-        (protectedPathsWithLocale = [
-          ...protectedPathsWithLocale,
+        (unprotectedPathsWithLocale = [
+          ...unprotectedPathsWithLocale,
           `/${locale}${route}`,
         ])
     );
   });
 
-  return protectedPathsWithLocale;
+  return unprotectedPathsWithLocale;
 }
 
 export function withAuthMiddleware(middleware: CustomMiddleware) {
@@ -35,16 +35,15 @@ export function withAuthMiddleware(middleware: CustomMiddleware) {
     request.nextauth.token = token;
     const pathname = request.nextUrl.pathname;
 
-    const protectedPathsWithLocale = getProtectedRoutes(protectedPaths, [
+    const unprotectedPathsWithLocale = getUnprotectedRoutes(unprotectedPaths, [
       ...i18n.locales,
     ]);
 
     if (
       !token &&
-      protectedPathsWithLocale.some((path) => pathname.includes(path))
+      !unprotectedPathsWithLocale.some((path) => pathname.includes(path))
     ) {
-      const signInUrl = new URL('/api/auth/signin', request.url);
-      signInUrl.searchParams.set('callbackUrl', pathname);
+      const signInUrl = new URL('/discover', request.url);
       return NextResponse.redirect(signInUrl);
     }
 

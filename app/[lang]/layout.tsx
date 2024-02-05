@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { i18n, Locale } from '@/i18n-config';
 import { GeistSans } from 'geist/font/sans';
+import { Toaster } from '@/components/ui/sonner';
 import '../globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import Providers from '../providers';
@@ -25,7 +26,10 @@ export default function RootLayout({
     <html lang={params.lang}>
       <body className={GeistSans.className}>
         <Providers>
-          <ThemeProvider>{children}</ThemeProvider>
+          <ThemeProvider>
+            {children}
+            <Toaster />
+          </ThemeProvider>
         </Providers>
       </body>
     </html>

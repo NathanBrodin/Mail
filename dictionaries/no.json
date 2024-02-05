@@ -1,9 +1,25 @@
 {
+  "auth": {
+    "signin": {
+      "title": "Logg inn på kontoen din",
+      "subtitle": "Skriv inn e-posten din nedenfor for å opprette kontoen din",
+      "emailPlaceholder": "navn@example.com",
+      "signinWithEmail": "Logg inn med e-post",
+      "or": "ELLER FORTSETT MED",
+      "continue": "Ved å klikke fortsett, godtar du våre",
+      "terms": "Vilkår for bruk",
+      "and": "og",
+      "privacy": "Personvernregler",
+      "quote": "E-postene trengte en forandring, så jeg lagde det.",
+      "author": "Nathan Brodin"
+    },
+    "signout": "Logg ut"
+  },
   "home": {
     "title": "Hjem"
   },
   "discover": {
-    "title": "Mail, raffinert",
-    "subtitle": "Se e-posten din på en ny måte"
+    "title": "Post, forfinet",
+    "subtitle": "Se på posten din på en ny måte"
   }
 }

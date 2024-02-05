@@ -14,8 +14,9 @@ export default async function Discover({ params: { lang } }: PageProps) {
       <p>{discover.subtitle}</p>
 
       <pre>{JSON.stringify(user, null, 2)}</pre>
-
-      <Link href="/api/auth/login">Log in</Link>
+      <Link href="/auth/signin">
+        Sign in
+      </Link>
     </div>
   );
 }

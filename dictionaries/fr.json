@@ -1,9 +1,25 @@
 {
+  "auth": {
+    "signin": {
+      "title": "Connectez-vous à votre compte",
+      "subtitle": "Entrez votre adresse e-mail ci-dessous pour créer votre compte",
+      "emailPlaceholder": "nom@example.com",
+      "signinWithEmail": "Se connecter avec l'e-mail",
+      "or": "OU CONTINUER AVEC",
+      "continue": "En cliquant sur continuer, vous acceptez nos",
+      "terms": "Conditions d'utilisation",
+      "and": "et",
+      "privacy": "Politique de confidentialité",
+      "quote": "Les e-mails avaient besoin d'un changement, alors je l'ai fait.",
+      "author": "Nathan Brodin"
+    },
+    "signout": "Déconnexion"
+  },
   "home": {
     "title": "Accueil"
   },
   "discover": {
-    "title": "Mail, affiné",
-    "subtitle": "Affichez votre courrier d'une nouvelle façon"
+    "title": "Courrier, affiné",
+    "subtitle": "Consultez votre courrier d'une nouvelle manière"
   }
 }
