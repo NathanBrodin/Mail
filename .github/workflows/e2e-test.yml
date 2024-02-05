@@ -6,9 +6,9 @@ env:
   NODE_VERSION: 20
 
 jobs:
-  install:
+  test:
     runs-on: ubuntu-latest
-    name: Install
+    name: Test
     steps:
       - uses: actions/checkout@v3
         with:
@@ -28,11 +28,6 @@ jobs:
       - name: Install cypress
         run: bunx cypress install
 
-  test:
-    runs-on: ubuntu-latest
-    needs: install
-    name: Test
-    steps:
       - name: Run tests
         run: bun run e2e-test:headless
 
