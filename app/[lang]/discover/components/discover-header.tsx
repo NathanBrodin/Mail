@@ -1,4 +1,4 @@
-import AppLogo from "@/components/ui/app-logo";
+import AppLogo from '@/components/ui/app-logo';
 
 export default function DiscoverHeader() {
   return (

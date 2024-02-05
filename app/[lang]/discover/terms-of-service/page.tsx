@@ -7,7 +7,10 @@ export default function Page() {
         <p>(Do I really need that ?)</p>
       </div>
 
-      <p>(If you read that, it means I considered it was not important writing it)</p>
+      <p>
+        (If you read that, it means I considered it was not important writing
+        it)
+      </p>
     </div>
   );
 }

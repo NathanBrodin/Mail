@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   description: 'Authentication to Mail.',
 };
 
-export default async function AuthenticationPage({ params: { lang } }: PageProps) {
+export default async function AuthenticationPage({
+  params: { lang },
+}: PageProps) {
   const { auth } = await getDictionary(lang);
   const signin = auth.signin;
 
@@ -23,9 +25,7 @@ export default async function AuthenticationPage({ params: { lang } }: PageProps
           <AppLogo />
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">
-              <p className="text-lg">
-                &ldquo;{signin.quote}&rdquo;
-              </p>
+              <p className="text-lg">&ldquo;{signin.quote}&rdquo;</p>
               <footer className="text-sm">{signin.author}</footer>
             </blockquote>
           </div>
@@ -36,9 +36,7 @@ export default async function AuthenticationPage({ params: { lang } }: PageProps
               <h1 className="text-2xl font-semibold tracking-tight">
                 {signin.title}
               </h1>
-              <p className="text-sm text-muted-foreground">
-                {signin.subtitle}
-              </p>
+              <p className="text-sm text-muted-foreground">{signin.subtitle}</p>
             </div>
             <UserAuthForm signin={signin} />
             <p className="px-8 text-center text-sm text-muted-foreground">

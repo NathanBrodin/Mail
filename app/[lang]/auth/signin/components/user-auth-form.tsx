@@ -13,7 +13,11 @@ interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {
   signin: any;
 }
 
-export function UserAuthForm({ signin, className, ...props }: UserAuthFormProps) {
+export function UserAuthForm({
+  signin,
+  className,
+  ...props
+}: UserAuthFormProps) {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   async function onSubmit(event: React.SyntheticEvent) {
@@ -65,7 +69,7 @@ export function UserAuthForm({ signin, className, ...props }: UserAuthFormProps)
         </div>
         <div className="relative flex justify-center text-xs uppercase">
           <span className="bg-background px-2 text-muted-foreground">
-          {signin.or}
+            {signin.or}
           </span>
         </div>
       </div>
