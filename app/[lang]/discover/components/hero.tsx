@@ -15,7 +15,7 @@ export default function Hero() {
           }}
         />
       </div>
-      <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div className="mx-auto max-w-2xl pt-32 sm:pt-48 lg:pt-56 pb-16 sm:pb-24 lg:pb-28">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
             Redefining Your

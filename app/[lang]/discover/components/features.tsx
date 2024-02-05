@@ -45,15 +45,13 @@ export default function Features() {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600">
-                Deploy faster
+                Mail, reinvented.
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
                 A better workflow
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-200">
-                Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                id at vitae feugiat egestas.
+                Todays email services still have interfaces from decades ago. As user needs have evolved, so should the tools they use.
               </p>
             </div>
           </div>
@@ -69,12 +67,8 @@ export default function Features() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-200 lg:max-w-lg">
               <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                varius sit neque erat velit. Faucibus commodo massa rhoncus,
-                volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                sed amet vitae sed turpis id.
+              Mail is a modern email client that aims to provide a better workflow for managing your emails.
+              Meet a new way to manage your emails, a way that is more efficient, more intuitive, and more enjoyable.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-300">
                 <li className="flex gap-x-3">
@@ -84,11 +78,9 @@ export default function Features() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-100">
-                      Push to deploy.
+                      Integrate
                     </strong>{' '}
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    with your existing emails addresses. Mail provide integration with Gmail and Outlook, as well as a custom @brodin.dev email address.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -98,10 +90,9 @@ export default function Features() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-100">
-                      SSL certificates.
+                      Private, by nature.
                     </strong>{' '}
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo.
+                    Mail access directly your email servers, no email content is stored anywhere.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -111,10 +102,9 @@ export default function Features() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-100">
-                      Database backups.
+                      Make it yours.
                     </strong>{' '}
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
+                    Mails come with extensive customization options, allowing to tailor your inbox that correspond to you.
                   </span>
                 </li>
               </ul>
@@ -126,15 +116,10 @@ export default function Features() {
                 et ut. Ac lorem vel integer orci.
               </p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-100">
-                No server? No problem.
+                Still not convinced?
               </h2>
               <p className="mt-6">
-                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-                vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
+                Mail is 100% free, and will always be. No ads, no tracking, no data mining. Just a better email client.
               </p>
             </div>
           </div>
