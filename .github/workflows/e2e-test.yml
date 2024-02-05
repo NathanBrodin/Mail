@@ -76,6 +76,12 @@ jobs:
         with:
           version: 8
 
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
