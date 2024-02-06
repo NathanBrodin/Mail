@@ -39,6 +39,12 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
 
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Install cypress
+        run: pnpm exec cypress install
+
       - name: Cypress install
         uses: cypress-io/github-action@v6
         with:
@@ -78,9 +84,6 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
-
-      - name: Install cypress
-        run: pnpm exec cypress install
 
       - name: Download the build folders
         uses: actions/download-artifact@v3
@@ -129,9 +132,6 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
 
-      - name: Install cypress
-        run: pnpm exec cypress install
-
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
@@ -173,9 +173,6 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
 
-      - name: Install cypress
-        run: pnpm exec cypress install
-
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
@@ -215,9 +212,6 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
-
-      - name: Install cypress
-        run: pnpm exec cypress install
 
       - name: Download the build folders
         uses: actions/download-artifact@v3
