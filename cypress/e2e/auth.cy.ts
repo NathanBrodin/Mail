@@ -28,4 +28,3 @@ describe('User can acces login', () => {
     cy.url().should('include', '/auth/signin');
   });
 });
-

@@ -33,7 +33,11 @@ export default function NavBar({
           >
             <span className="sr-only">{dictionary.openMainMenu}</span>
             {!mobileMenuOpen && (
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" data-cy="open-menu-button"/>
+              <Bars3Icon
+                className="h-6 w-6"
+                aria-hidden="true"
+                data-cy="open-menu-button"
+              />
             )}
           </button>
         </div>
