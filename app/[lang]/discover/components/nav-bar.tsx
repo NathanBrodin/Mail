@@ -6,14 +6,13 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import AppLogo from '@/components/ui/app-logo';
 import Link from 'next/link';
 import { Icons } from '@/components/ui/icons';
+import { getDictionary } from '@/lib/get-dictionary';
 
-const navigation = [
-  { name: 'Features', href: '#' },
-  { name: 'Privacy', href: '#' },
-  { name: 'About', href: '#' },
-];
-
-export default function NavBar() {
+export default function NavBar({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>['discover']['nav'];
+}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -31,14 +30,14 @@ export default function NavBar() {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-300"
             onClick={() => setMobileMenuOpen(true)}
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only">{dictionary.openMainMenu}</span>
             {!mobileMenuOpen && (
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             )}
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12 text-gray-100">
-          {navigation.map((item) => (
+          {dictionary.navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
@@ -56,7 +55,7 @@ export default function NavBar() {
             href="#"
             className="rounded-md bg-secondary-accent-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-accent-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-accent-600"
           >
-            Sign in <span aria-hidden="true">&rarr;</span>
+            {dictionary.signIn} <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
       </nav>
@@ -77,14 +76,14 @@ export default function NavBar() {
               className="-m-2.5 rounded-md p-2.5 text-gray-300"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <span className="sr-only">Close menu</span>
+              <span className="sr-only">{dictionary.closeMainMenu}</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6 text-gray-100">
-                {navigation.map((item) => (
+                {dictionary.navigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
@@ -99,7 +98,7 @@ export default function NavBar() {
                   href="#"
                   className="rounded-md bg-secondary-accent-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-accent-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-accent-600"
                 >
-                  Sign in <span aria-hidden="true">&rarr;</span>
+                  {dictionary.signIn} <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>
             </div>

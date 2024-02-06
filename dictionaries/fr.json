@@ -1,113 +1,113 @@
 {
   "auth": {
     "signin": {
-      "title": "Sign in to your account",
-      "subtitle": "Enter your email below to create your account",
-      "emailPlaceholder": "name@example.com",
-      "signinWithEmail": "Sign in with email",
-      "or": "OR CONTINUE WITH",
-      "continue": "By clicking continue, you agree to our",
-      "terms": "Terms of Service",
-      "and": "and",
-      "privacy": "Privacy Policy",
-      "quote": "Mails needed a change, so I made it.",
+      "title": "Connectez-vous à votre compte",
+      "subtitle": "Saisissez votre adresse e-mail ci-dessous pour créer votre compte",
+      "emailPlaceholder": "nom@example.com",
+      "signinWithEmail": "Se connecter avec email",
+      "or": "OU CONTINUER AVEC",
+      "continue": "En cliquant sur Continuer, vous acceptez nos",
+      "terms": "Conditions d'utilisation",
+      "and": "et",
+      "privacy": "Politique de confidentialité",
+      "quote": "Les mails avaient besoin d'un changement, alors je l'ai fait.",
       "author": "Nathan Brodin"
     },
-    "signout": "Sign out"
+    "signout": "Déconnexion"
   },
   "home": {
-    "title": "Home"
+    "title": "Accueil"
   },
   "discover": {
     "nav": {
       "navigation": [
         {
-          "name": "Features",
+          "name": "Fonctionnalités",
           "href": "#features"
         },
         {
-          "name": "Privacy",
+          "name": "Confidentialité",
           "href": "#privacy"
         },
         {
-          "name": "About",
+          "name": "À propos",
           "href": "#about"
         }
       ],
-      "openMainMenu": "Open main menu",
-      "closeMainMenu": "Close menu",
-      "signIn": "Sign in"
+      "openMainMenu": "Ouvrir le menu principal",
+      "closeMainMenu": "Fermer le menu",
+      "signIn": "Se connecter"
     },
     "hero": {
-      "title1": "Redefining Your",
-      "title2": "Inbox",
-      "title3": "Experience",
-      "subtitle": "Elevate your email experience with a fresh perspective. Redefine how you manage messages, effortlessly prioritizing and responding with intuitive simplicity.",
-      "getStarted": "Get Started",
-      "learnMore": "Learn More"
+      "title1": "Redéfinissez votre",
+      "title2": "Boîte de réception",
+      "title3": "",
+      "subtitle": "Élevez votre expérience de messagerie électronique avec une nouvelle perspective. Redéfinissez la manière dont vous gérez vos messages, en priorisant et en répondant de manière intuitive et simple.",
+      "getStarted": "Commencer",
+      "learnMore": "En savoir plus"
     },
     "stats": {
-      "users": "Users",
-      "mailsSend": "Mails Send",
-      "mailsReceived": "Mails Received"
+      "users": "Utilisateurs",
+      "mailsSend": "Mails envoyés",
+      "mailsReceived": "Mails reçus"
     },
     "features": {
-      "intro": "Mail, reinvented.",
-      "title": "A better workflow",
-      "subtitle": "Todays email services still have interfaces from decades ago. As user needs have evolved, so should the tools they use.",
-      "description": "Mail is a modern email client that aims to provide a better workflow for managing your emails. Meet a new way to manage your emails, a way that is more efficient, more intuitive, and more enjoyable.",
+      "intro": "Mail, réinventé.",
+      "title": "Un meilleur flux de travail",
+      "subtitle": "Les services de messagerie électronique d'aujourd'hui ont encore des interfaces datant de plusieurs décennies. Comme les besoins des utilisateurs ont évolué, les outils qu'ils utilisent devraient également évoluer.",
+      "description": "Mail est un client de messagerie électronique moderne qui vise à offrir un meilleur flux de travail pour la gestion de vos e-mails. Découvrez une nouvelle façon de gérer vos e-mails, une façon qui est plus efficace, plus intuitive et plus agréable.",
       "features": [
         {
-          "title": "Integrate",
-          "description": "with your existing emails addresses. Mail provide integration with Gmail and Outlook, as well as a custom @brodin.dev email address."
+          "title": "Intégration",
+          "description": "avec vos adresses e-mail existantes. Mail offre une intégration avec Gmail et Outlook, ainsi qu'une adresse e-mail personnalisée @brodin.dev."
         },
         {
-          "title": "Private, by nature.",
-          "description": "Mail access directly your email servers, no email content is stored anywhere."
+          "title": "Privé, par nature.",
+          "description": "Mail accède directement à vos serveurs de messagerie électronique, aucun contenu d'e-mail n'est stocké nulle part."
         },
         {
-          "title": "Make it yours.",
-          "description": "Mail come with extensive customization options, allowing to tailor your inbox that correspond to you."
+          "title": "Faites-le vôtre.",
+          "description": "Mail dispose d'options de personnalisation étendues, vous permettant de personnaliser votre boîte de réception en fonction de vos besoins."
         }
       ],
       "outro": "Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.",
-      "title2": "Still not convinced?",
-      "description2": "Mail is 100% free, and will always be. No ads, no tracking, no data mining. Just a better email client."
+      "title2": "Pas encore convaincu?",
+      "description2": "Mail est 100% gratuit, et le restera toujours. Pas de publicités, pas de suivi, pas d'exploitation des données. Juste un meilleur client de messagerie électronique."
     },
     "testimonials": {
-      "title": "Testimonials",
-      "subtitle": "What people are saying about Mail.",
+      "title": "Témoignages",
+      "subtitle": "Ce que les gens disent à propos de Mail.",
       "testimonials": [
         {
           "author": "Vanessa",
-          "position": "My mom",
-          "body": "I love Mail! Maybe it's only because my son did it, but still love it."
+          "position": "Ma maman",
+          "body": "J'adore Mail ! Peut-être parce que mon fils l'a fait, mais je l'adore quand même."
         },
         {
           "author": "Sophie",
-          "position": "Just a friend",
-          "body": "Even I, the person who once struggled to turn on a computer, found Mail to be a breeze! It's like a digital hug from my inbox. Kudos to your son, Vanessa!"
+          "position": "Juste une amie",
+          "body": "Même moi, la personne qui a déjà eu du mal à allumer un ordinateur, j'ai trouvé que Mail était un jeu d'enfant ! C'est comme un câlin numérique de ma boîte de réception. Bravo à votre fils, Vanessa !"
         },
         {
           "author": "Pascal",
-          "position": "My uncle",
-          "body": "I usually prefer carrier pigeons, but your Mail service has converted me! It's faster, less messy, and doesn't require a birdcage cleanup. Thumbs up from this old-school enthusiast!"
+          "position": "Mon oncle",
+          "body": "Je préfère habituellement les pigeons voyageurs, mais votre service Mail m'a convaincu ! C'est plus rapide, moins salissant et ne nécessite pas de nettoyage de cage. Bravo à ce passionné des vieilles méthodes !"
         },
         {
           "author": "Victor",
-          "position": "My grandpa",
-          "body": "But what is this thing, where do I have to press to make it work?"
+          "position": "Mon grand-père",
+          "body": "Mais qu'est-ce que c'est que ce truc, où est-ce que je dois appuyer pour le faire fonctionner ?"
         }
       ]
     },
     "footer": {
-      "rights": "2024 Brodin Mail. All rights reserved.",
+      "rights": "2024 Brodin Mail. Tous droits réservés.",
       "navigation": [
-        { "name": "Features", "href": "#features" },
-        { "name": "Privacy", "href": "#" },
-        { "name": "About", "href": "#" },
-        { "name": "Terms of service", "href": "/terms-of-service" },
-        { "name": "Privacy policy", "href": "/privacy-policy" },
+        { "name": "Fonctionnalités", "href": "#features" },
+        { "name": "Confidentialité", "href": "#" },
+        { "name": "À propos", "href": "#" },
+        { "name": "Conditions d'utilisation", "href": "/terms-of-service" },
+        { "name": "Politique de confidentialité", "href": "/privacy-policy" },
         { "name": "Contact", "href": "#" }
       ]
     }

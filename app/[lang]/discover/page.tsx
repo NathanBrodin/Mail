@@ -7,7 +7,6 @@ import Testimonials from './components/testimonials/testimonials';
 import Features from './components/features';
 
 export default async function Discover({ params: { lang } }: PageProps) {
-  // eslint-disable-next-line no-unused-vars
   const { discover } = await getDictionary(lang);
 
   return (
