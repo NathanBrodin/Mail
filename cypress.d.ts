@@ -1,4 +1,4 @@
-export {}
+export {};
 declare global {
   // eslint-disable-next-line no-unused-vars
   namespace Cypress {
@@ -12,12 +12,12 @@ declare global {
       /**
        * Logs-in user by using Google API request
        */
-      googleLogin(): Chainable<Response>
+      googleLogin(): Chainable<Response>;
 
       /**
        * Stubs login via fixture, to get past the auth wall
        */
-      stubLogin(): void
+      stubLogin(): void;
     }
   }
 }
