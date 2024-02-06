@@ -105,7 +105,6 @@ jobs:
           wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: chrome
-          group: "UI - Chrome"
 
   ui-chrome-mobile-tests:
     timeout-minutes: 15
@@ -145,7 +144,6 @@ jobs:
           wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: chrome
-          group: "UI - Chrome - Mobile"
 
   ui-firefox-tests:
     timeout-minutes: 15
@@ -184,7 +182,6 @@ jobs:
           wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: firefox
-          group: "UI - Firefox"
 
   ui-firefox-mobile-tests:
     timeout-minutes: 15
@@ -224,4 +221,3 @@ jobs:
           wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: firefox
-          group: "UI - Firefox - Mobile"
