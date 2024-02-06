@@ -21,7 +21,7 @@ export default function NavBar({
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <Link href="/discover" className="flex lg:flex-1">
+        <Link href="/discover" className="flex lg:flex-1" aria-label="home">
           <AppLogo />
         </Link>
         <div className="flex lg:hidden">
@@ -39,6 +39,7 @@ export default function NavBar({
         <div className="hidden lg:flex lg:gap-x-12 text-gray-100">
           {dictionary.navigation.map((item) => (
             <Link
+              aria-label={item.name}
               key={item.name}
               href={item.href}
               className="text-sm font-medium leading-6 hover:text-gray-300"
@@ -48,11 +49,12 @@ export default function NavBar({
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center">
-          <Link href="https://github.com/NathanBrodin/Mail">
+          <Link href="https://github.com/NathanBrodin/Mail" aria-label='GitHub'>
             <Icons.gitHub className="mr-6 h-6 w-6 text-gray-300" />
           </Link>
           <Link
-            href="#"
+            aria-label={dictionary.signIn}
+            href="/auth/signin"
             className="rounded-md bg-secondary-accent-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-accent-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-accent-600"
           >
             {dictionary.signIn} <span aria-hidden="true">&rarr;</span>
@@ -68,7 +70,7 @@ export default function NavBar({
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-slate-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link href="/discover" className="-m-1.5 p-1.5 text-white">
+            <Link href="/discover" className="-m-1.5 p-1.5 text-white" aria-label='home'>
               <AppLogo />
             </Link>
             <button
@@ -85,6 +87,7 @@ export default function NavBar({
               <div className="space-y-2 py-6 text-gray-100">
                 {dictionary.navigation.map((item) => (
                   <Link
+                    aria-label={item.name}
                     key={item.name}
                     href={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7  hover:bg-gray-800"
@@ -95,7 +98,8 @@ export default function NavBar({
               </div>
               <div className="py-6 text-gray-100">
                 <Link
-                  href="#"
+                  aria-label={dictionary.signIn}
+                  href="auth/signin"
                   className="rounded-md bg-secondary-accent-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-accent-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-accent-600"
                 >
                   {dictionary.signIn} <span aria-hidden="true">&rarr;</span>
