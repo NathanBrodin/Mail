@@ -7,6 +7,7 @@ import AppLogo from '@/components/ui/app-logo';
 import Link from 'next/link';
 import { Icons } from '@/components/ui/icons';
 import { getDictionary } from '@/lib/get-dictionary';
+import posthog from 'posthog-js';
 
 export default function NavBar({
   dictionary,
@@ -49,7 +50,11 @@ export default function NavBar({
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center">
-          <Link href="https://github.com/NathanBrodin/Mail" aria-label="GitHub">
+          <Link
+            href="https://github.com/NathanBrodin/Mail"
+            aria-label="GitHub"
+            onClick={() => posthog.capture('Click on GitHub link')}
+          >
             <Icons.gitHub className="mr-6 h-6 w-6 text-gray-300" />
           </Link>
           <Link

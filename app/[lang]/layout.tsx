@@ -7,6 +7,7 @@ import { Toaster } from '@/components/ui/sonner';
 import '../globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import Providers from '../providers';
+import posthog from 'posthog-js';
 
 export const metadata: Metadata = {
   title: 'Mail',
@@ -24,6 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { lang: Locale };
 }>) {
+  posthog.init(process.env.POSTHOG_API_KEY ?? '', {
+    api_host: 'https://app.posthog.com',
+  });
+
   return (
     <html lang={params.lang}>
       <body className={GeistSans.className}>
