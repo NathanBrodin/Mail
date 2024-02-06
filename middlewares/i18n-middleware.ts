@@ -35,7 +35,7 @@ export function withI18nMiddleware(middleware: CustomMiddleware) {
   ) => {
     const pathname = request.nextUrl.pathname;
 
-    if (['/logo.svg', '/mail-dark.png'].includes(pathname)) return;
+    if (['/logo.svg', '/mail-preview.png'].includes(pathname)) return;
 
     // Check if there is any supported locale in the pathname
     const pathnameIsMissingLocale = i18n.locales.every(
