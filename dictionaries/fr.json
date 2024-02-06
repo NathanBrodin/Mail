@@ -2,7 +2,7 @@
   "auth": {
     "signin": {
       "title": "Connectez-vous à votre compte",
-      "subtitle": "Saisissez votre adresse e-mail ci-dessous pour créer votre compte",
+      "subtitle": "Choisissez un fournisseur avec lequel vous connecter",
       "emailPlaceholder": "nom@example.com",
       "signinWithEmail": "Se connecter avec email",
       "or": "OU CONTINUER AVEC",

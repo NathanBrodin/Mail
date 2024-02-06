@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use client';
 
 import { cn } from '@/lib/utils';
@@ -39,7 +40,7 @@ export function UserAuthForm({
 
   return (
     <div className={cn('grid gap-6', className)} {...props}>
-      <form onSubmit={onSubmit}>
+      {/* <form onSubmit={onSubmit}>
         <div className="grid gap-2">
           <div className="grid gap-1">
             <Label className="sr-only" htmlFor="email">
@@ -72,7 +73,7 @@ export function UserAuthForm({
             {signin.or}
           </span>
         </div>
-      </div>
+      </div> */}
       <div className="grid gap-1">
         <Button
           variant="outline"
