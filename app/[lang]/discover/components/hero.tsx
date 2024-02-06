@@ -1,6 +1,9 @@
+import { getDictionary } from '@/lib/get-dictionary';
 import Link from 'next/link';
 
-export default function Hero() {
+export default function Hero({
+  dictionary
+}: {dictionary: Awaited<ReturnType<typeof getDictionary>>["discover"]["hero"]}) {
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8">
       <div
@@ -18,30 +21,28 @@ export default function Hero() {
       <div className="mx-auto max-w-2xl pt-32 sm:pt-48 lg:pt-56 pb-16 sm:pb-24 lg:pb-28">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
-            Redefining Your
+            {dictionary.title1}
             <span className="bg-gradient-to-tr from-primary-accent-500 to-secondary-accent-500 text-transparent bg-clip-text">
               {' '}
-              Inbox{' '}
+              {dictionary.title2}{' '}
             </span>
-            Experience
+            {dictionary.title3}
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-400">
-            Elevate your email experience with a fresh perspective. Redefine how
-            you manage messages, effortlessly prioritizing and responding with
-            intuitive simplicity.
+            {dictionary.subtitle}
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
               href="#"
               className="rounded-md bg-secondary-accent-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-accent-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Get started
+              {dictionary.getStarted}
             </Link>
             <a
               href="#"
               className="text-sm font-semibold leading-6 text-gray-100 hover:text-gray-300"
             >
-              Learn more <span aria-hidden="true">→</span>
+              {dictionary.learnMore} <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>

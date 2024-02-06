@@ -5,10 +5,18 @@ import {
 } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 import mailPreview from '../../../../public/mail-preview.png';
+import { getDictionary } from '@/lib/get-dictionary';
 
-export default function Features() {
+export default function Features({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>['discover']['features'];
+}) {
   return (
-    <div className="relative isolate overflow-hidden lg:overflow-visible lg:px-0 my-52">
+    <div
+      className="relative isolate overflow-hidden lg:overflow-visible lg:px-0 my-52"
+      id="#features"
+    >
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
           className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-700 [mask-image:radial-gradient(64rem_64rem_at_top,black,transparent)]"
@@ -45,14 +53,13 @@ export default function Features() {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600">
-                Mail, reinvented.
+                {dictionary.intro}
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-                A better workflow
+                {dictionary.title}
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-200">
-                Todays email services still have interfaces from decades ago. As
-                user needs have evolved, so should the tools they use.
+                {dictionary.subtitle}
               </p>
             </div>
           </div>
@@ -67,12 +74,7 @@ export default function Features() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-200 lg:max-w-lg">
-              <p>
-                Mail is a modern email client that aims to provide a better
-                workflow for managing your emails. Meet a new way to manage your
-                emails, a way that is more efficient, more intuitive, and more
-                enjoyable.
-              </p>
+              <p>{dictionary.description}</p>
               <ul role="list" className="mt-8 space-y-8 text-gray-300">
                 <li className="flex gap-x-3">
                   <CloudArrowUpIcon
@@ -81,11 +83,9 @@ export default function Features() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-100">
-                      Integrate
+                      {dictionary.features[0].title}
                     </strong>{' '}
-                    with your existing emails addresses. Mail provide
-                    integration with Gmail and Outlook, as well as a custom
-                    @brodin.dev email address.
+                    {dictionary.features[0].description}
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -95,10 +95,9 @@ export default function Features() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-100">
-                      Private, by nature.
+                    {dictionary.features[1].title}
                     </strong>{' '}
-                    Mail access directly your email servers, no email content is
-                    stored anywhere.
+                    {dictionary.features[1].description}
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -108,26 +107,20 @@ export default function Features() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-100">
-                      Make it yours.
+                    {dictionary.features[2].title}
                     </strong>{' '}
-                    Mails come with extensive customization options, allowing to
-                    tailor your inbox that correspond to you.
+                    {dictionary.features[2].description}
                   </span>
                 </li>
               </ul>
               <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
+                {dictionary.outro}
               </p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-100">
-                Still not convinced?
+                {dictionary.title2}
               </h2>
               <p className="mt-6">
-                Mail is 100% free, and will always be. No ads, no tracking, no
-                data mining. Just a better email client.
+                {dictionary.description2}
               </p>
             </div>
           </div>
