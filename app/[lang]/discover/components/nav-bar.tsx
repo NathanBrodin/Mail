@@ -33,7 +33,7 @@ export default function NavBar({
           >
             <span className="sr-only">{dictionary.openMainMenu}</span>
             {!mobileMenuOpen && (
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="h-6 w-6" aria-hidden="true" data-cy="open-menu-button"/>
             )}
           </button>
         </div>
@@ -59,6 +59,7 @@ export default function NavBar({
           </Link>
           <Link
             aria-label={dictionary.signIn}
+            data-cy="sign-in-button"
             href="/auth/signin"
             className="rounded-md bg-secondary-accent-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-accent-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-accent-600"
           >
@@ -109,6 +110,7 @@ export default function NavBar({
                 <Link
                   aria-label={dictionary.signIn}
                   href="auth/signin"
+                  data-cy="sign-in-button-mobile"
                   className="rounded-md bg-secondary-accent-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-accent-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-accent-600"
                 >
                   {dictionary.signIn} <span aria-hidden="true">&rarr;</span>
