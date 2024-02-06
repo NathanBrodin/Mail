@@ -4,6 +4,8 @@ on: [push, pull_request]
 
 env:
   NODE_VERSION: 20
+  NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
+  NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
 
 jobs:
   install:
