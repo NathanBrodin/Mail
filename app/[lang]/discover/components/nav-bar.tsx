@@ -49,7 +49,7 @@ export default function NavBar({
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center">
-          <Link href="https://github.com/NathanBrodin/Mail" aria-label='GitHub'>
+          <Link href="https://github.com/NathanBrodin/Mail" aria-label="GitHub">
             <Icons.gitHub className="mr-6 h-6 w-6 text-gray-300" />
           </Link>
           <Link
@@ -70,7 +70,11 @@ export default function NavBar({
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-slate-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link href="/discover" className="-m-1.5 p-1.5 text-white" aria-label='home'>
+            <Link
+              href="/discover"
+              className="-m-1.5 p-1.5 text-white"
+              aria-label="home"
+            >
               <AppLogo />
             </Link>
             <button

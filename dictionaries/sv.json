@@ -27,11 +27,11 @@
         },
         {
           "name": "Privacy",
-          "href": "#privacy"
+          "href": "/discover/privacy"
         },
         {
           "name": "About",
-          "href": "#about"
+          "href": "/discover/about"
         }
       ],
       "openMainMenu": "Open main menu",
@@ -104,11 +104,11 @@
       "rights": "2024 Brodin Mail. All rights reserved.",
       "navigation": [
         { "name": "Features", "href": "#features" },
-        { "name": "Privacy", "href": "#" },
-        { "name": "About", "href": "#" },
-        { "name": "Terms of service", "href": "/terms-of-service" },
-        { "name": "Privacy policy", "href": "/privacy-policy" },
-        { "name": "Contact", "href": "#" }
+        { "name": "Privacy", "href": "/discover/privacy" },
+        { "name": "About", "href": "/discover/about" },
+        { "name": "Terms of service", "href": "/discover/terms-of-service" },
+        { "name": "Privacy policy", "href": "/discover//privacy-policy" },
+        { "name": "Contact", "href": "/discover/contact" }
       ]
     }
   }

@@ -27,11 +27,11 @@
         },
         {
           "name": "Confidentialité",
-          "href": "#privacy"
+          "href": "/discover/privacy"
         },
         {
           "name": "À propos",
-          "href": "#about"
+          "href": "/discover/about"
         }
       ],
       "openMainMenu": "Ouvrir le menu principal",
@@ -104,11 +104,11 @@
       "rights": "2024 Brodin Mail. Tous droits réservés.",
       "navigation": [
         { "name": "Fonctionnalités", "href": "#features" },
-        { "name": "Confidentialité", "href": "#" },
-        { "name": "À propos", "href": "#" },
-        { "name": "Conditions d'utilisation", "href": "/terms-of-service" },
-        { "name": "Politique de confidentialité", "href": "/privacy-policy" },
-        { "name": "Contact", "href": "#" }
+        { "name": "Confidentialité", "href": "/discover/privacy" },
+        { "name": "À propos", "href": "/discover/about" },
+        { "name": "Conditions d'utilisation", "href": "/discover/terms-of-service" },
+        { "name": "Politique de confidentialité", "href": "/discover/privacy-policy" },
+        { "name": "Contact", "href": "/discover/about" }
       ]
     }
   }

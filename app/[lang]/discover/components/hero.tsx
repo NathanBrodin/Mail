@@ -41,12 +41,12 @@ export default function Hero({
             >
               {dictionary.getStarted}
             </Link>
-            <a
-              href="#"
+            <Link
+              href="#preview"
               className="text-sm font-semibold leading-6 text-gray-100 hover:text-gray-300"
             >
               {dictionary.learnMore} <span aria-hidden="true">→</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

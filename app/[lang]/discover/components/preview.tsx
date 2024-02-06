@@ -3,7 +3,7 @@ import mailPreview from '../../../../public/mail-preview.png';
 
 export default function Preview() {
   return (
-    <div className="w-full flex flex-col items-center relative">
+    <div className="w-full flex flex-col items-center relative" id='preview'>
       <Image
         src={mailPreview}
         alt="Mail preview"

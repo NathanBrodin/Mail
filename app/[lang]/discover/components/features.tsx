@@ -15,7 +15,7 @@ export default function Features({
   return (
     <div
       className="relative isolate overflow-hidden lg:overflow-visible lg:px-0 my-52"
-      id="#features"
+      id="features"
     >
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
