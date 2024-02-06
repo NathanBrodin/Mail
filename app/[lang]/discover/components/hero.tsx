@@ -2,8 +2,10 @@ import { getDictionary } from '@/lib/get-dictionary';
 import Link from 'next/link';
 
 export default function Hero({
-  dictionary
-}: {dictionary: Awaited<ReturnType<typeof getDictionary>>["discover"]["hero"]}) {
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>['discover']['hero'];
+}) {
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8">
       <div

@@ -95,7 +95,7 @@ export default function Features({
                   />
                   <span>
                     <strong className="font-semibold text-gray-100">
-                    {dictionary.features[1].title}
+                      {dictionary.features[1].title}
                     </strong>{' '}
                     {dictionary.features[1].description}
                   </span>
@@ -107,21 +107,17 @@ export default function Features({
                   />
                   <span>
                     <strong className="font-semibold text-gray-100">
-                    {dictionary.features[2].title}
+                      {dictionary.features[2].title}
                     </strong>{' '}
                     {dictionary.features[2].description}
                   </span>
                 </li>
               </ul>
-              <p className="mt-8">
-                {dictionary.outro}
-              </p>
+              <p className="mt-8">{dictionary.outro}</p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-100">
                 {dictionary.title2}
               </h2>
-              <p className="mt-6">
-                {dictionary.description2}
-              </p>
+              <p className="mt-6">{dictionary.description2}</p>
             </div>
           </div>
         </div>

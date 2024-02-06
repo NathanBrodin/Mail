@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { i18n, Locale } from '@/i18n-config';
 import { GeistSans } from 'geist/font/sans';
 import { Toaster } from '@/components/ui/sonner';

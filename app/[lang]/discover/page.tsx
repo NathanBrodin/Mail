@@ -12,11 +12,11 @@ export default async function Discover({ params: { lang } }: PageProps) {
 
   return (
     <div>
-      <Hero dictionary={discover.hero}/>
+      <Hero dictionary={discover.hero} />
       <Preview />
-      <Stats dictionary={discover.stats}/>
-      <Features dictionary={discover.features}/>
-      <Testimonials dictionary={discover.testimonials}/>
+      <Stats dictionary={discover.stats} />
+      <Features dictionary={discover.features} />
+      <Testimonials dictionary={discover.testimonials} />
     </div>
   );
 }

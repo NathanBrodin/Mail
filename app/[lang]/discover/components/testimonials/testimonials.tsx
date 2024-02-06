@@ -4,7 +4,9 @@ import Testimonial from './testimonial';
 export default function Testimonials({
   dictionary,
 }: {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>['discover']['testimonials'];
+  dictionary: Awaited<
+    ReturnType<typeof getDictionary>
+  >['discover']['testimonials'];
 }) {
   return (
     <div className="relative isolate mx-auto max-w-7xl px-6 lg:px-8">
