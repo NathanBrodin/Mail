@@ -106,8 +106,14 @@
         { "name": "Fonctionnalités", "href": "#features" },
         { "name": "Confidentialité", "href": "/discover/privacy" },
         { "name": "À propos", "href": "/discover/about" },
-        { "name": "Conditions d'utilisation", "href": "/discover/terms-of-service" },
-        { "name": "Politique de confidentialité", "href": "/discover/privacy-policy" },
+        {
+          "name": "Conditions d'utilisation",
+          "href": "/discover/terms-of-service"
+        },
+        {
+          "name": "Politique de confidentialité",
+          "href": "/discover/privacy-policy"
+        },
         { "name": "Contact", "href": "/discover/about" }
       ]
     }
