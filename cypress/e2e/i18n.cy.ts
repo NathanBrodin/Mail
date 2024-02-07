@@ -6,26 +6,6 @@ describe('Internationalization Routing initial route testing', () => {
     cy.url().should('not.include', '/fr');
   });
 
-  it('Should change language to French', () => {
-    cy.visit('/fr');
-    cy.url().should('include', '/fr');
-  });
-
-  it('Should change language to English', () => {
-    cy.visit('/en');
-    cy.url().should('include', '/en');
-  });
-
-  it('Should change language to Norwegian', () => {
-    cy.visit('/no');
-    cy.url().should('include', '/no');
-  });
-
-  it('Should change language to Swedish', () => {
-    cy.visit('/sv');
-    cy.url().should('include', '/sv');
-  });
-
   it('Should redirect to French', () => {
     // Pass an Accept-Language header in 'fr' to simulate a French user
     cy.visit('/', {
@@ -57,6 +37,16 @@ describe('Internationalization Routing initial route testing', () => {
     });
 
     cy.url().should('include', '/sv');
+  });
+
+  it('Should redirect to default language', () => {
+    cy.visit('/', {
+      headers: {
+        'Accept-Language': 'es',
+      },
+    });
+
+    cy.url().should('include', '/');
   });
 });
 

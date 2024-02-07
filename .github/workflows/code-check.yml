@@ -1,10 +1,6 @@
 name: Code check
 
-on:
-  push:
-    branches:
-      - main
-      - dev
+on: [push, pull_request]
 
 env:
   NODE_VERSION: 20
@@ -12,24 +8,26 @@ env:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    name: bun lint
+    name: pnpm lint
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-
-      - name: Install bun
-        uses: oven-sh/setup-bun@v1
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: bun install
+        run: pnpm install
 
-      - run: bun run lint
+      - run: pnpm run lint
 
   format:
     runs-on: ubuntu-latest
@@ -39,15 +37,17 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-
-      - name: Install bun
-        uses: oven-sh/setup-bun@v1
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: bun install
+        run: pnpm install
 
-      - run: bun run format:check
+      - run: pnpm run format:check

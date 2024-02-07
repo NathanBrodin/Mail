@@ -1,9 +1,121 @@
 {
+  "auth": {
+    "signin": {
+      "title": "Connectez-vous à votre compte",
+      "subtitle": "Choisissez un fournisseur avec lequel vous connecter",
+      "emailPlaceholder": "nom@example.com",
+      "signinWithEmail": "Se connecter avec email",
+      "or": "OU CONTINUER AVEC",
+      "continue": "En cliquant sur Continuer, vous acceptez nos",
+      "terms": "Conditions d'utilisation",
+      "and": "et",
+      "privacy": "Politique de confidentialité",
+      "quote": "Les mails avaient besoin d'un changement, alors je l'ai fait.",
+      "author": "Nathan Brodin"
+    },
+    "signout": "Déconnexion"
+  },
   "home": {
     "title": "Accueil"
   },
   "discover": {
-    "title": "Mail, affiné",
-    "subtitle": "Affichez votre courrier d'une nouvelle façon"
+    "nav": {
+      "navigation": [
+        {
+          "name": "Fonctionnalités",
+          "href": "#features"
+        },
+        {
+          "name": "Confidentialité",
+          "href": "/discover/privacy"
+        },
+        {
+          "name": "À propos",
+          "href": "/discover/about"
+        }
+      ],
+      "openMainMenu": "Ouvrir le menu principal",
+      "closeMainMenu": "Fermer le menu",
+      "signIn": "Se connecter"
+    },
+    "hero": {
+      "title1": "Redéfinissez votre",
+      "title2": "Boîte de réception",
+      "title3": "",
+      "subtitle": "Élevez votre expérience de messagerie électronique avec une nouvelle perspective. Redéfinissez la manière dont vous gérez vos messages, en priorisant et en répondant de manière intuitive et simple.",
+      "getStarted": "Commencer",
+      "learnMore": "En savoir plus"
+    },
+    "stats": {
+      "users": "Utilisateurs",
+      "mailsSend": "Mails envoyés",
+      "mailsReceived": "Mails reçus"
+    },
+    "features": {
+      "intro": "Mail, réinventé.",
+      "title": "Un meilleur flux de travail",
+      "subtitle": "Les services de messagerie électronique d'aujourd'hui ont encore des interfaces datant de plusieurs décennies. Comme les besoins des utilisateurs ont évolué, les outils qu'ils utilisent devraient également évoluer.",
+      "description": "Mail est un client de messagerie électronique moderne qui vise à offrir un meilleur flux de travail pour la gestion de vos e-mails. Découvrez une nouvelle façon de gérer vos e-mails, une façon qui est plus efficace, plus intuitive et plus agréable.",
+      "features": [
+        {
+          "title": "Intégration",
+          "description": "avec vos adresses e-mail existantes. Mail offre une intégration avec Gmail et Outlook, ainsi qu'une adresse e-mail personnalisée @brodin.dev."
+        },
+        {
+          "title": "Privé, par nature.",
+          "description": "Mail accède directement à vos serveurs de messagerie électronique, aucun contenu d'e-mail n'est stocké nulle part."
+        },
+        {
+          "title": "Faites-le vôtre.",
+          "description": "Mail dispose d'options de personnalisation étendues, vous permettant de personnaliser votre boîte de réception en fonction de vos besoins."
+        }
+      ],
+      "outro": "Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.",
+      "title2": "Pas encore convaincu?",
+      "description2": "Mail est 100% gratuit, et le restera toujours. Pas de publicités, pas de suivi, pas d'exploitation des données. Juste un meilleur client de messagerie électronique."
+    },
+    "testimonials": {
+      "title": "Témoignages",
+      "subtitle": "Ce que les gens disent à propos de Mail.",
+      "testimonials": [
+        {
+          "author": "Vanessa",
+          "position": "Ma maman",
+          "body": "J'adore Mail ! Peut-être parce que mon fils l'a fait, mais je l'adore quand même."
+        },
+        {
+          "author": "Sophie",
+          "position": "Juste une amie",
+          "body": "Même moi, la personne qui a déjà eu du mal à allumer un ordinateur, j'ai trouvé que Mail était un jeu d'enfant ! C'est comme un câlin numérique de ma boîte de réception. Bravo à votre fils, Vanessa !"
+        },
+        {
+          "author": "Pascal",
+          "position": "Mon oncle",
+          "body": "Je préfère habituellement les pigeons voyageurs, mais votre service Mail m'a convaincu ! C'est plus rapide, moins salissant et ne nécessite pas de nettoyage de cage. Bravo à ce passionné des vieilles méthodes !"
+        },
+        {
+          "author": "Victor",
+          "position": "Mon grand-père",
+          "body": "Mais qu'est-ce que c'est que ce truc, où est-ce que je dois appuyer pour le faire fonctionner ?"
+        }
+      ]
+    },
+    "footer": {
+      "rights": "2024 Brodin Mail. Tous droits réservés.",
+      "navigation": [
+        { "name": "Fonctionnalités", "href": "#features" },
+        { "name": "Confidentialité", "href": "/discover/privacy" },
+        { "name": "À propos", "href": "/discover/about" },
+        {
+          "name": "Conditions d'utilisation",
+          "href": "/discover/terms-of-service"
+        },
+        {
+          "name": "Politique de confidentialité",
+          "href": "/discover/privacy-policy"
+        },
+        { "name": "Contact", "href": "/discover/about" }
+      ]
+    }
   }
 }

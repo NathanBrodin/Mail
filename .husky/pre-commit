@@ -1,2 +1,2 @@
-bun run lint
-bun run prettier
+pnpm run lint
+pnpm run prettier
