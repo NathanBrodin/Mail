@@ -17,6 +17,7 @@ const authOptions = {
     signIn: '/auth/signin',
     error: '/auth/error',
     verifyRequest: '/auth/verify-request',
+    newUser: '/new-user'
   },
 };
 
