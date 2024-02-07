@@ -1,6 +1,6 @@
 describe('Login', () => {
   it.only('should stubLogin', () => {
-    // cy.stubLogin();
+    cy.stubLogin();
   });
 
   it('should googleLogin', () => {

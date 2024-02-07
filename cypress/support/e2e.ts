@@ -7,7 +7,7 @@ Cypress.Commands.add('stubLogin', () => {
 
   cy.setCookie(
     'next-auth.session-token',
-    'a valid cookie from the browser session'
+    Cypress.env('AUTH_COOKIE'),
   );
 
   cy.visit('/');
