@@ -14,5 +14,5 @@ export default defineConfig({
   },
   env: {
     AUTH_COOKIE: '',
-  }
+  },
 });
