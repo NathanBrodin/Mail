@@ -12,4 +12,7 @@ export default defineConfig({
       bundler: 'webpack',
     },
   },
+  env: {
+    AUTH_COOKIE: '',
+  },
 });

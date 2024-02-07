@@ -107,7 +107,7 @@
         { "name": "Privacy", "href": "/discover/privacy" },
         { "name": "About", "href": "/discover/about" },
         { "name": "Terms of service", "href": "/discover/terms-of-service" },
-        { "name": "Privacy policy", "href": "/discover//privacy-policy" },
+        { "name": "Privacy policy", "href": "/discover/privacy-policy" },
         { "name": "Contact", "href": "/discover/contact" }
       ]
     }
