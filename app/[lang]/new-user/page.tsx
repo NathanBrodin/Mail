@@ -50,7 +50,10 @@ export default async function Page() {
           <div className="text-center ">
             <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl animate-fade-in">
               Welcome aboard,
-              <span className="bg-gradient-to-tr from-primary-accent-500 to-secondary-accent-500 text-transparent bg-clip-text" data-cy='new-user-name'>
+              <span
+                className="bg-gradient-to-tr from-primary-accent-500 to-secondary-accent-500 text-transparent bg-clip-text"
+                data-cy="new-user-name"
+              >
                 {' '}
                 {user?.name}{' '}
               </span>
