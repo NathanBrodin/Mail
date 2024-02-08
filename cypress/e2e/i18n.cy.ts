@@ -111,3 +111,38 @@ describe('Internationalization Routing nested route testing', () => {
     cy.url().should('include', '/sv');
   });
 });
+
+describe('Internationalization link persistence', () => {
+  it('Should persist the language when navigating to a new page with default language', () => {
+    cy.visit('/discover');
+
+    cy.get('[data-cy="get-started-button"]').click();
+    cy.url().should('include', '/auth/signin');
+  });
+
+  it('Should persist the language when navigating to a new page with french language', () => {
+    cy.visit('/fr/discover');
+
+    cy.get('[data-cy="get-started-button"]').click();
+    cy.url().should('include', '/fr/auth/signin');
+  });
+
+  it('Should persist the language when navigating to a new page with norwegian language', () => {
+    cy.visit('/no/discover');
+
+    cy.get('[data-cy="get-started-button"]').click();
+    cy.url().should('include', '/no/auth/signin');
+  });
+
+  it('Should redirect to Swedish', () => {
+    cy.visit('/discover', {
+      headers: {
+        'Accept-Language': 'sv',
+      },
+    });
+    cy.url().should('include', '/sv');
+
+    cy.get('[data-cy="get-started-button"]').click();
+    cy.url().should('include', '/sv/auth/signin');
+  });
+});
