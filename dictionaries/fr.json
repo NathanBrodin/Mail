@@ -18,6 +18,11 @@
   "home": {
     "title": "Accueil"
   },
+  "newUser": {
+    "title": "Bienvenue à bord",
+    "subtitle": "Dites adieu au chaos des e-mails et bonjour à la simplicité. Votre expérience de messagerie est sur le point de bénéficier d'une mise à niveau majeure.",
+    "explore": "Explorer maintenant"
+  },
   "discover": {
     "nav": {
       "navigation": [

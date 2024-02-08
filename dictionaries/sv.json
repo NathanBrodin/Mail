@@ -2,7 +2,7 @@
   "auth": {
     "signin": {
       "title": "Sign in to your account",
-      "subtitle": "Enter your email below to create your account",
+      "subtitle": "Choose a provider to sign in with",
       "emailPlaceholder": "name@example.com",
       "signinWithEmail": "Sign in with email",
       "or": "OR CONTINUE WITH",
@@ -17,6 +17,11 @@
   },
   "home": {
     "title": "Home"
+  },
+  "newUser": {
+    "title": "Welcome aboard",
+    "subtitle": "Say goodbye to email chaos and hello to simplicity. Your email experience is about to get a major upgrade.",
+    "explore": "Explore Now"
   },
   "discover": {
     "nav": {
@@ -107,7 +112,7 @@
         { "name": "Privacy", "href": "/discover/privacy" },
         { "name": "About", "href": "/discover/about" },
         { "name": "Terms of service", "href": "/discover/terms-of-service" },
-        { "name": "Privacy policy", "href": "/discover//privacy-policy" },
+        { "name": "Privacy policy", "href": "/discover/privacy-policy" },
         { "name": "Contact", "href": "/discover/contact" }
       ]
     }

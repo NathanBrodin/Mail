@@ -18,6 +18,11 @@
   "home": {
     "title": "Home"
   },
+  "newUser": {
+    "title": "Welcome aboard",
+    "subtitle": "Say goodbye to email chaos and hello to simplicity. Your email experience is about to get a major upgrade.",
+    "explore": "Explore Now"
+  },
   "discover": {
     "nav": {
       "navigation": [

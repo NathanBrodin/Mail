@@ -1,7 +1,11 @@
+import { getDictionary } from '@/lib/get-dictionary';
+import { PageProps } from '@/lib/types/page-props';
 import { getServerSession } from 'next-auth';
 import Link from 'next/link';
 
-export default async function Page() {
+export default async function Page({ params: { lang } }: PageProps) {
+  const { newUser } = await getDictionary(lang);
+
   const session = await getServerSession();
   const user = session?.user;
 
@@ -49,7 +53,7 @@ export default async function Page() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center ">
             <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl animate-fade-in">
-              Welcome aboard,
+              {newUser.title}
               <span
                 className="bg-gradient-to-tr from-primary-accent-500 to-secondary-accent-500 text-transparent bg-clip-text"
                 data-cy="new-user-name"
@@ -59,15 +63,14 @@ export default async function Page() {
               </span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300 animate-fade-in">
-              Say goodbye to email chaos and hello to simplicity. Your email
-              experience is about to get a major upgrade.
+              {newUser.subtitle}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 animate-fade-in-slow">
               <Link
                 href="/"
                 className="rounded-md bg-primary-accent-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-accent-400 hover:scale-110 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-primary-accent-600"
               >
-                Explore Now
+                {newUser.explore}
               </Link>
             </div>
           </div>
