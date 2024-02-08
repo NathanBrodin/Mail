@@ -80,6 +80,9 @@
 }
 
 @layer utilities {
+  .animation-delay-0-5 {
+    animation-delay: 0.5s;
+  }
   .animation-delay-1000 {
     animation-delay: 1s;
   }
