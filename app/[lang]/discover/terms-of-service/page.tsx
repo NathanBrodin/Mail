@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -9,7 +9,10 @@ export default function Page() {
       <p>This page is still under construction. Please come back later.</p>
 
       <div className="mt-8">
-        <Link href="/discover" className="text-primary-accent-500 hover:underline">
+        <Link
+          href="/discover"
+          className="text-primary-accent-500 hover:underline"
+        >
           Go back to the Discover page
         </Link>
       </div>
