@@ -7,7 +7,7 @@ export default function Preview() {
       <Image
         src={mailPreview}
         alt="Mail preview"
-        className="shadow-xl border border-slate-800 rounded-xl lg:w-2/3"
+        className="shadow-xl border border-slate-800 rounded-xl lg:w-2/3 z-10"
       />
     </div>
   );
