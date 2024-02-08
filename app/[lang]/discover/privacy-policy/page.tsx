@@ -1,16 +1,18 @@
+import Link from "next/link";
+
 export default function Page() {
   return (
-    <div className="flex flex-col gap-32 bg-background w-full min-h-screen">
-      <div>
-        <h1>Privacy policy</h1>
-        <p>These is the privacy policy.</p>
-        <p>(Do I really need that ?)</p>
-      </div>
+    <div className="w-screen min-h-screen  flex flex-col items-center justify-center">
+      <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
+        Work in progress...
+      </h1>
+      <p>This page is still under construction. Please come back later.</p>
 
-      <p>
-        (If you read that, it means I considered it was not important writing
-        it)
-      </p>
+      <div className="mt-8">
+        <Link href="/discover" className="text-primary-accent-500 hover:underline">
+          Go back to the Discover page
+        </Link>
+      </div>
     </div>
   );
 }
