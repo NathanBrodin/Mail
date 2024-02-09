@@ -69,6 +69,10 @@ export default {
       mailsReceived: 'Mails Received',
     },
     features: {
+      mainIntro: 'Mail, reinvented.',
+      mainTitle: 'A better workflow',
+      mainSubtitle:
+        'Mail is a modern email client that aims to provide a better workflow for managing your emails. Meet a new way to manage your emails, a way that is more efficient, more intuitive, and more enjoyable.',
       intro: 'Mail, reinvented.',
       title: 'A better workflow',
       subtitle:

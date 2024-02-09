@@ -28,7 +28,7 @@ export default function Stats({
                 {dictionary.users}
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight text-gray-100 sm:text-5xl">
-                100
+                0
               </dd>
             </div>
             <div className="mx-auto flex max-w-xs flex-col gap-y-4 hover:scale-110 transition-all">
@@ -36,7 +36,7 @@ export default function Stats({
                 {dictionary.mailsSend}
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight text-gray-100 sm:text-5xl">
-                100
+                0
               </dd>
             </div>
             <div className="mx-auto flex max-w-xs flex-col gap-y-4 hover:scale-110 transition-all">
@@ -44,7 +44,7 @@ export default function Stats({
                 {dictionary.mailsReceived}
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight text-gray-100 sm:text-5xl">
-                100
+                0
               </dd>
             </div>
           </dl>
