@@ -29,9 +29,7 @@ the following categories:
 
   e.g. `feat(components): add new prop to the avatar component`
 
-
 If you are interested in the detailed specification you can visit [conventionalcommits.org](https://www.conventionalcommits.org/)
-
 
 ## Pull Request Guidelines
 
