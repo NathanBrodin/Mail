@@ -56,11 +56,11 @@ export default {
       signIn: 'Se connecter',
     },
     hero: {
-      title1: 'Redéfinir votre',
+      title1: 'Redéfinissez votre',
       title2: 'Boîte de réception',
-      title3: 'Expérience',
+      title3: '',
       subtitle:
-        'Rehaussez votre expérience email avec une perspective fraîche. Redéfinissez la façon dont vous gérez les messages, en priorisant et en répondant avec une simplicité intuitive.',
+        'Rehaussez votre expérience de mail avec une nouvelle perspective. Redéfinissez la façon dont vous gérez les messages, en priorisant et en répondant avec une simplicité intuitive.',
       getStarted: 'Commencer',
       learnMore: 'En savoir plus',
     },
@@ -100,7 +100,7 @@ export default {
           icon: SparklesIcon,
         },
         {
-          name: 'Options de personnalisation personnalisées',
+          name: 'Options de personnalisation',
           description:
             'Faites de votre boîte de réception la vôtre. Personnalisez les couleurs, les mises en page et les catégories pour adapter votre expérience email à vos préférences uniques.',
           icon: SwatchIcon,
@@ -155,7 +155,7 @@ export default {
         {
           author: 'Victor',
           position: 'Mon grand-père',
-          body: "Mais qu'est-ce que c'est que ça, où dois-je appuyer pour que ça fonctionne ?",
+          body: "Mais qu'est-ce que c'est que ça, où que c'est que j'dois appuyer pour que ça fonctionne ton truc là ?",
         },
       ],
     },
