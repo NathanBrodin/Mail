@@ -1,4 +1,10 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon, UserGroupIcon } from '@heroicons/react/20/solid';
+import {
+  ArrowPathIcon,
+  CloudArrowUpIcon,
+  FingerPrintIcon,
+  LockClosedIcon,
+  UserGroupIcon,
+} from '@heroicons/react/20/solid';
 import { ServerIcon } from '@heroicons/react/24/outline';
 
 // eslint-disable-next-line import/no-anonymous-default-export
