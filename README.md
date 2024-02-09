@@ -1,46 +1,67 @@
-[![codecov](https://codecov.io/gh/NathanBrodin/Mail/graph/badge.svg?token=UYSTekOTeu)](https://codecov.io/gh/NathanBrodin/Mail)
+<div align="center">
+
+# Mail
+**Redefining Your Inbox Experience**
+
+</div>
+
+---
+![Discover Screenshot](.github/images/discover-screenshot.png)
+
+Elevate your email experience with a fresh perspective. Redefine how you manage messages, effortlessly prioritizing and responding with intuitive simplicity.
+
+Available on [mail.brodin.dev](https://mail.brodin.dev)
+## Tech Stack
+- ### Frontend
+    - [Next.js](https://nextjs.org/)
+    - [TypeScript](https://www.typescriptlang.org/)
+
+
+- ### UI
+    - [Tailwind CSS](https://tailwindcss.com/)
+    - [shadcn/ui](https://ui.shadcn.com/)
+    - [tailwindui](https://tailwindui.com/)
+
+
+- ### Deployment and Hosting
+    - [Vercel](https://vercel.com/)
+
+- ### Package Manager
+    - [pnpm](https://pnpm.io/)
+
+- ### Error Tracking
+    - [Sentry](https://sentry.io/)
+
+- ### Analytics
+    - [PostHog](https://posthog.com/)
+
+
 
 ## Installation
-
-This project uses [Bun](https://bun.sh) as a package manager. You can install it using the following command:
-
+Clone the repository:
 ```bash
-curl -fsSL https://bun.sh/install | bash
+git clone https://github.com/NathanBrodin/Mail.git
 ```
 
-Then, install the dependencies:
-
+Once you have cloned the repository, install the dependencies:
 ```bash
-bun install
+pnpm install
 ```
 
-### Authentication
+#### Setting up the environment variables
+Check the `.env.example` file for the required environment variables. 
 
-copy the `.env.example` file to `.env.local` and fill in the required fields.
+Create a new file called `.env.local` and add the required environment variables.
 
-You can find Auth0 credentials in the [Auth0 Dashboard](https://manage.auth0.com/dashboard/eu/dev-3z3z3z3z/applications/)
-
-To create the `NEXTAUTH_SECRET` you can use the following command:
-
+## Running the application
+To run the application, use the following command:
 ```bash
-openssl rand -base64 32
-```
-
-More info in [NextAuth.js documentation](https://next-auth.js.org/deployment)
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-bun dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-<div style="text-align: center">
-    <h1>Test Coverage Report
-    <a href="https://codecov.io/gh/NathanBrodin/Mail/graphs/sunburst.svg?token=UYSTekOTeu">
-        <img src="https://codecov.io/gh/NathanBrodin/Mail/graphs/sunburst.svg?token=UYSTekOTeu" alt="codecovreport">
-    </a>
-</div>
+## Contributing
+Contributions are always welcome!
+
+See [CONTRIBUTING.md](/CONTRIBUTING.md) for ways to get started.
