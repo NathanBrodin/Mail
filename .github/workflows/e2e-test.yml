@@ -108,6 +108,12 @@ jobs:
           wait-on-timeout: 120
           browser: chrome
 
+      - name: Save screenshots
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots
+          path: cypress/screenshots
+
   ui-chrome-mobile-tests:
     timeout-minutes: 15
     runs-on: ubuntu-latest
@@ -147,6 +153,12 @@ jobs:
           wait-on-timeout: 120
           browser: chrome
 
+      - name: Save screenshots
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots
+          path: cypress/screenshots
+
   ui-firefox-tests:
     timeout-minutes: 15
     runs-on: ubuntu-latest
@@ -184,6 +196,12 @@ jobs:
           wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: firefox
+
+      - name: Save screenshots
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots
+          path: cypress/screenshots
 
   ui-firefox-mobile-tests:
     timeout-minutes: 15
@@ -223,3 +241,9 @@ jobs:
           wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: firefox
+      
+      - name: Save screenshots
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots
+          path: cypress/screenshots
