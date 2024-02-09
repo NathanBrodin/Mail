@@ -1,11 +1,12 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
+  ClipboardDocumentCheckIcon,
+  LinkIcon,
   LockClosedIcon,
+  SparklesIcon,
+  Square3Stack3DIcon,
+  SwatchIcon,
   UserGroupIcon,
 } from '@heroicons/react/20/solid';
-import { ServerIcon } from '@heroicons/react/24/outline';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -73,44 +74,44 @@ export default {
       mainTitle: 'A better workflow',
       mainSubtitle:
         'Mail is a modern email client that aims to provide a better workflow for managing your emails. Meet a new way to manage your emails, a way that is more efficient, more intuitive, and more enjoyable.',
-      intro: 'Mail, reinvented.',
-      title: 'A better workflow',
+      intro: 'Mail, refined.',
+      title: 'Streamlined Email Management',
       subtitle:
         'Todays email services still have interfaces from decades ago. As user needs have evolved, so should the tools they use.',
       description:
-        'Mail is a modern email client that aims to provide a better workflow for managing your emails. Meet a new way to manage your emails, a way that is more efficient, more intuitive, and more enjoyable.',
+        'Experience a refined approach to email management with Mail. Say goodbye to cluttered inboxes and hello to streamlined workflows that make managing your emails a breeze.',
       mainFeatures: [
         {
-          name: 'Efficient Task Prioritization',
+          name: 'Task-Oriented Inbox',
           description:
-            'Easily categorize emails into custom folders like "To Respond," "Waiting for Reply," and "Important," ensuring you stay organized and focused.',
-          icon: CloudArrowUpIcon,
+            'Simplify your email management with our Task-Oriented Inbox. Easily prioritize emails, track responses, and manage important messages in one intuitive interface.',
+          icon: ClipboardDocumentCheckIcon,
         },
         {
-          name: 'SSL certificates',
+          name: 'Effortless Email Prioritization',
           description:
-            'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-          icon: LockClosedIcon,
+            'Define how to categorize your emails based on urgency and importance, allowing you to focus on what matters most. Spend less time sifting through clutter and more time tackling your priorities.',
+          icon: Square3Stack3DIcon,
         },
         {
-          name: 'Simple queues',
+          name: 'Enhanced Email Composition',
           description:
-            'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-          icon: ArrowPathIcon,
+            'Seamlessly craft stunning emails with support for Markdown and HTML. From simple text formatting to rich content, express yourself effortlessly in your emails.',
+          icon: SparklesIcon,
         },
         {
-          name: 'Advanced security',
+          name: 'Personalized Customization Options',
           description:
-            'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-          icon: FingerPrintIcon,
+            'Make your inbox your own. Customize colors, layouts, and categories to tailor your email experience to your unique preferences.',
+          icon: SwatchIcon,
         },
       ],
       features: [
         {
-          title: 'Private, by nature.',
+          title: 'Seamless Integration',
           description:
-            'Mail access directly your email servers, no email content is stored anywhere.',
-          icon: LockClosedIcon,
+            'Connect Mail with your favorite email services, including Gmail, Outlook, and Yahoo Mail. No need to switch between multiple email clients.',
+          icon: LinkIcon,
         },
         {
           title: 'Fully Open Source.',
@@ -119,14 +120,14 @@ export default {
           icon: UserGroupIcon,
         },
         {
-          title: 'Make it yours.',
+          title: 'Private, by nature.',
           description:
-            'Mail come with extensive customization options, allowing to tailor your inbox that correspond to you.',
-          icon: ServerIcon,
+            'Mail access directly your email servers, no email content is stored anywhere.',
+          icon: LockClosedIcon,
         },
       ],
-      outro:
-        'Experience the future of email management with Mail. Revolutionize your inbox workflow effortlessly. From advanced task prioritization to personalized customization, Mail empowers you to conquer your email with ease. Join now and elevate your email experience.',
+      outro: 'Your privacy matters. Discover how we keep your data safe.',
+      learnMore: 'Learn more',
       title2: 'Still not convinced?',
       description2:
         'Mail is completely free and always will be. No ads, no tracking, no data mining - just a better email client.',

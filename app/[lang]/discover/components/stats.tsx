@@ -20,7 +20,7 @@ export default function Stats({
         />
       </div>
 
-      <div className="py-24 sm:py-32 rounded-2xl m-16  sm:m-32 bg-gradient-to-br from-black/80 to-black/40 backdrop-blur-lg shadow-lg ring-1 ring-gray-300/10 transition">
+      <div className="py-14 sm:py-20 rounded-2xl m-16  sm:m-32 bg-gradient-to-br from-black/80 to-black/40 backdrop-blur-lg shadow-lg ring-1 ring-gray-300/10 transition">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
             <div className="mx-auto flex max-w-xs flex-col gap-y-4 hover:scale-110 transition-all">
