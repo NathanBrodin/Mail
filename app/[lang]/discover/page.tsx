@@ -13,8 +13,8 @@ export default async function Discover({ params: { lang } }: PageProps) {
     <div>
       <Hero dictionary={discover.hero} />
       <Preview />
-      <Stats dictionary={discover.stats} />
       <Features dictionary={discover.features} />
+      <Stats dictionary={discover.stats} />
       <Testimonials dictionary={discover.testimonials} />
     </div>
   );
