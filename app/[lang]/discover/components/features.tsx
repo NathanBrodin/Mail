@@ -1,40 +1,6 @@
 import { getDictionary } from '@/lib/get-dictionary';
-import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from '@heroicons/react/20/solid';
 import Image from 'next/image';
 import mailPreview from '../../../../public/mail-preview.png';
-
-const features = [
-  {
-    name: 'Efficient Task Prioritization',
-    description:
-      'Easily categorize emails into custom folders like "To Respond," "Waiting for Reply," and "Important," ensuring you stay organized and focused.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL certificates',
-    description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Simple queues',
-    description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-    icon: ArrowPathIcon,
-  },
-  {
-    name: 'Advanced security',
-    description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
-  },
-];
 
 export default function Features({
   dictionary,
@@ -72,7 +38,7 @@ export default function Features({
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-              {features.map((feature) => (
+              {dictionary.mainFeatures.map((feature) => (
                 <div
                   key={feature.name}
                   className="relative pl-16 hover:scale-105 transition-all"
@@ -167,42 +133,20 @@ export default function Features({
               <div className="max-w-xl text-base leading-7 text-gray-200 lg:max-w-lg">
                 <p>{dictionary.description}</p>
                 <ul role="list" className="mt-8 space-y-8 text-gray-300">
-                  <li className="flex gap-x-3">
-                    <CloudArrowUpIcon
-                      className="mt-1 h-5 w-5 flex-none text-secondary-accent-500"
-                      aria-hidden="true"
-                    />
-                    <span>
-                      <strong className="font-semibold text-gray-100">
-                        {dictionary.features[0].title}
-                      </strong>{' '}
-                      {dictionary.features[0].description}
-                    </span>
-                  </li>
-                  <li className="flex gap-x-3">
-                    <LockClosedIcon
-                      className="mt-1 h-5 w-5 flex-none text-secondary-accent-500"
-                      aria-hidden="true"
-                    />
-                    <span>
-                      <strong className="font-semibold text-gray-100">
-                        {dictionary.features[1].title}
-                      </strong>{' '}
-                      {dictionary.features[1].description}
-                    </span>
-                  </li>
-                  <li className="flex gap-x-3">
-                    <ServerIcon
-                      className="mt-1 h-5 w-5 flex-none text-secondary-accent-500"
-                      aria-hidden="true"
-                    />
-                    <span>
-                      <strong className="font-semibold text-gray-100">
-                        {dictionary.features[2].title}
-                      </strong>{' '}
-                      {dictionary.features[2].description}
-                    </span>
-                  </li>
+                  {dictionary.features.map((feature) => (
+                    <li className="flex gap-x-3" key={feature.title}>
+                      <feature.icon
+                        className="mt-1 h-5 w-5 flex-none text-secondary-accent-500"
+                        aria-hidden="true"
+                      />
+                      <span>
+                        <strong className="font-semibold text-gray-100">
+                          {feature.title}
+                        </strong>{' '}
+                        {feature.description}
+                      </span>
+                    </li>
+                  ))}
                 </ul>
                 <p className="mt-8">{dictionary.outro}</p>
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-100">
