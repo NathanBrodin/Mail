@@ -67,11 +67,16 @@ export default async function Page({ params: { lang } }: PageProps) {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 animate-fade-in-slow">
               <Link
-                href="/"
-                className="rounded-md bg-primary-accent-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-accent-400 hover:scale-110 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-primary-accent-600"
-              >
-                {newUser.explore}
-              </Link>
+              aria-label={newUser.explore}
+              data-cy="get-started-button"
+              href="/"
+              className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-50 hover:scale-110 transition-all"
+            >
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3.5 py-2.5 text-sm font-medium text-white backdrop-blur-3xl">
+              {newUser.explore}
+              </span>
+            </Link>
             </div>
           </div>
         </div>

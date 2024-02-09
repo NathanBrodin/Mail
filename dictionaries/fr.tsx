@@ -12,160 +12,167 @@ import {
 export default {
   auth: {
     signin: {
-      title: 'Sign in to your account',
-      subtitle: 'Choose a provider to sign in with',
-      emailPlaceholder: 'name@example.com',
-      signinWithEmail: 'Sign in with email',
-      or: 'OR CONTINUE WITH',
-      continue: 'By clicking continue, you agree to our',
-      terms: 'Terms of Service',
-      and: 'and',
-      privacy: 'Privacy Policy',
-      quote: 'Mails needed a change, so I made it.',
+      title: 'Connectez-vous à votre compte',
+      subtitle: 'Choisissez un fournisseur pour vous connecter',
+      emailPlaceholder: 'nom@example.com',
+      signinWithEmail: 'Se connecter avec email',
+      or: 'OU CONTINUER AVEC',
+      continue: 'En cliquant sur continuer, vous acceptez nos',
+      terms: "Conditions d'utilisation",
+      and: 'et',
+      privacy: 'Politique de confidentialité',
+      quote: "Les mails avaient besoin d'un changement, alors je l'ai fait.",
       author: 'Nathan Brodin',
     },
-    signout: 'Sign out',
+    signout: 'Se déconnecter',
   },
   home: {
-    title: 'Home',
+    title: 'Accueil',
   },
   newUser: {
-    title: 'Welcome aboard',
+    title: 'Bienvenue à bord',
     subtitle:
-      'Say goodbye to email chaos and hello to simplicity. Your email experience is about to get a major upgrade.',
-    explore: 'Explore Now',
+      "Dites au revoir au chaos des emails et bonjour à la simplicité. Votre expérience email est sur le point de bénéficier d'une mise à niveau majeure.",
+    explore: 'Explorer maintenant',
   },
   discover: {
     nav: {
       navigation: [
         {
-          name: 'Features',
+          name: 'Fonctionnalités',
           href: '#features',
         },
         {
-          name: 'Privacy',
-          href: '/discover/privacy',
+          name: 'Confidentialité',
+          href: '/discover/confidentialite',
         },
         {
-          name: 'About',
-          href: '/discover/about',
+          name: 'À propos',
+          href: '/discover/a-propos',
         },
       ],
-      openMainMenu: 'Open main menu',
-      closeMainMenu: 'Close menu',
-      signIn: 'Sign in',
+      openMainMenu: 'Ouvrir le menu principal',
+      closeMainMenu: 'Fermer le menu',
+      signIn: 'Se connecter',
     },
     hero: {
-      title1: 'Redefining Your',
-      title2: 'Inbox',
-      title3: 'Experience',
+      title1: 'Redéfinir votre',
+      title2: 'Boîte de réception',
+      title3: 'Expérience',
       subtitle:
-        'Elevate your email experience with a fresh perspective. Redefine how you manage messages, effortlessly prioritizing and responding with intuitive simplicity.',
-      getStarted: 'Get Started',
-      learnMore: 'Learn More',
+        'Rehaussez votre expérience email avec une perspective fraîche. Redéfinissez la façon dont vous gérez les messages, en priorisant et en répondant avec une simplicité intuitive.',
+      getStarted: 'Commencer',
+      learnMore: 'En savoir plus',
     },
     stats: {
-      users: 'Users',
-      mailsSend: 'Mails Send',
-      mailsReceived: 'Mails Received',
+      users: 'Utilisateurs',
+      mailsSend: 'Emails Envoyés',
+      mailsReceived: 'Emails Reçus',
     },
     features: {
-      mainIntro: 'Mail, reinvented.',
-      mainTitle: 'A better workflow',
+      mainIntro: 'Mail, réinventé.',
+      mainTitle: 'Un meilleur flux de travail',
       mainSubtitle:
-        'Mail is a modern email client that aims to provide a better workflow for managing your emails. Meet a new way to manage your emails, a way that is more efficient, more intuitive, and more enjoyable.',
-      intro: 'Mail, refined.',
-      title: 'Streamlined Email Management',
+        'Mail est un client email moderne qui vise à fournir un meilleur flux de travail pour la gestion de vos emails. Découvrez une nouvelle façon de gérer vos emails, une façon qui est plus efficace, plus intuitive et plus agréable.',
+      intro: 'Mail, affiné.',
+      title: "Gestion de l'email simplifiée",
       subtitle:
-        'Todays email services still have interfaces from decades ago. As user needs have evolved, so should the tools they use.',
+        "Les services email d'aujourd'hui ont encore des interfaces datant de plusieurs décennies. Comme les besoins des utilisateurs ont évolué, les outils qu'ils utilisent devraient aussi évoluer.",
       description:
-        'Experience a refined approach to email management with Mail. Say goodbye to cluttered inboxes and hello to streamlined workflows that make managing your emails a breeze.',
+        "Découvrez une approche affinée de la gestion de l'email avec Mail. Dites adieu aux boîtes de réception encombrées et bonjour aux flux de travail simplifiés qui rendent la gestion de vos emails un jeu d'enfant.",
       mainFeatures: [
         {
-          name: 'Task-Oriented Inbox',
+          name: 'Boîte de réception orientée tâche',
           description:
-            'Simplify your email management with our Task-Oriented Inbox. Easily prioritize emails, track responses, and manage important messages in one intuitive interface.',
+            'Simplifiez la gestion de vos emails avec notre boîte de réception orientée tâche. Priorisez facilement les emails, suivez les réponses et gérez les messages importants dans une interface intuitive.',
           icon: ClipboardDocumentCheckIcon,
         },
         {
-          name: 'Effortless Email Prioritization',
+          name: 'Priorisation des emails sans effort',
           description:
-            'Define how to categorize your emails based on urgency and importance, allowing you to focus on what matters most. Spend less time sifting through clutter and more time tackling your priorities.',
+            "Définissez comment catégoriser vos emails en fonction de l'urgence et de l'importance, ce qui vous permet de vous concentrer sur ce qui est le plus important. Passez moins de temps à trier le désordre et plus de temps à aborder vos priorités.",
           icon: Square3Stack3DIcon,
         },
         {
-          name: 'Enhanced Email Composition',
+          name: "Composition d'email améliorée",
           description:
-            'Seamlessly craft stunning emails with support for Markdown and HTML. From simple text formatting to rich content, express yourself effortlessly in your emails.',
+            'Créez facilement des emails étonnants avec prise en charge de Markdown et HTML. De la simple mise en forme de texte au contenu enrichi, exprimez-vous facilement dans vos emails.',
           icon: SparklesIcon,
         },
         {
-          name: 'Personalized Customization Options',
+          name: 'Options de personnalisation personnalisées',
           description:
-            'Make your inbox your own. Customize colors, layouts, and categories to tailor your email experience to your unique preferences.',
+            'Faites de votre boîte de réception la vôtre. Personnalisez les couleurs, les mises en page et les catégories pour adapter votre expérience email à vos préférences uniques.',
           icon: SwatchIcon,
         },
       ],
       features: [
         {
-          title: 'Seamless Integration',
+          title: 'Intégration transparente',
           description:
-            'Connect Mail with your favorite email services, including Gmail, Outlook, and Yahoo Mail. No need to switch between multiple email clients.',
+            'Connectez Mail à vos services email préférés, y compris Gmail, Outlook et Yahoo Mail. Pas besoin de passer entre plusieurs clients email.',
           icon: LinkIcon,
         },
         {
-          title: 'Fully Open Source.',
+          title: 'Entièrement open source.',
           description:
-            'Then entire project is open source, meaning you can see the code and contribute to it.',
+            "L'ensemble du projet est open source, ce qui signifie que vous pouvez voir le code et y contribuer.",
           icon: UserGroupIcon,
         },
         {
-          title: 'Private, by nature.',
+          title: 'Privé, par nature.',
           description:
-            'Mail access directly your email servers, no email content is stored anywhere.',
+            "Mail accède directement à vos serveurs email, aucun contenu email n'est stocké nulle part.",
           icon: LockClosedIcon,
         },
       ],
-      outro: 'Your privacy matters. Discover how we keep your data safe.',
-      learnMore: 'Learn more',
-      title2: 'Still not convinced?',
+      outro:
+        'Votre vie privée est importante. Découvrez comment nous protégeons vos données.',
+      learnMore: 'En savoir plus',
+      title2: 'Pas encore convaincu ?',
       description2:
-        'Mail is completely free and always will be. No ads, no tracking, no data mining - just a better email client.',
+        'Mail est totalement gratuit et le restera toujours. Pas de publicité, pas de suivi, pas de collecte de données - juste un meilleur client email.',
     },
     testimonials: {
-      title: 'Testimonials',
-      subtitle: 'What people are saying about Mail.',
+      title: 'Témoignages',
+      subtitle: 'Ce que les gens disent à propos de Mail.',
       testimonials: [
         {
           author: 'Vanessa',
-          position: 'My mom',
-          body: "I love Mail! Maybe it's only because my son did it, but still love it.",
+          position: 'Ma maman',
+          body: "J'adore Mail ! Peut-être seulement parce que mon fils l'a fait, mais je l'aime quand même.",
         },
         {
           author: 'Sophie',
-          position: 'Just a friend',
-          body: "Even I, the person who once struggled to turn on a computer, found Mail to be a breeze! It's like a digital hug from my inbox. Kudos to your son, Vanessa!",
+          position: 'Juste une amie',
+          body: "Même moi, la personne qui a autrefois eu du mal à allumer un ordinateur, j'ai trouvé que Mail était un jeu d'enfant ! C'est comme un câlin numérique de ma boîte de réception. Bravo à votre fils, Vanessa !",
         },
         {
           author: 'Pascal',
-          position: 'My uncle',
-          body: "I usually prefer carrier pigeons, but your Mail service has converted me! It's faster, less messy, and doesn't require a birdcage cleanup. Thumbs up from this old-school enthusiast!",
+          position: 'Mon oncle',
+          body: "Je préfère généralement les pigeons voyageurs, mais votre service Mail m'a converti ! C'est plus rapide, moins salissant et ne nécessite pas de nettoyage de cage à oiseaux. Bravo à cet enthousiaste de l'ancienne école !",
         },
         {
           author: 'Victor',
-          position: 'My grandpa',
-          body: 'But what is this thing, where do I have to press to make it work?',
+          position: 'Mon grand-père',
+          body: "Mais qu'est-ce que c'est que ça, où dois-je appuyer pour que ça fonctionne ?",
         },
       ],
     },
     footer: {
-      rights: '2024 Brodin Mail. All rights reserved.',
+      rights: '2024 Brodin Mail. Tous droits réservés.',
       navigation: [
-        { name: 'Features', href: '#features' },
-        { name: 'Privacy', href: '/discover/privacy' },
-        { name: 'About', href: '/discover/about' },
-        { name: 'Terms of service', href: '/discover/terms-of-service' },
-        { name: 'Privacy policy', href: '/discover/privacy-policy' },
+        { name: 'Fonctionnalités', href: '#features' },
+        { name: 'Confidentialité', href: '/discover/confidentialite' },
+        { name: 'À propos', href: '/discover/a-propos' },
+        {
+          name: "Conditions d'utilisation",
+          href: '/discover/conditions-d-utilisation',
+        },
+        {
+          name: 'Politique de confidentialité',
+          href: '/discover/politique-de-confidentialite',
+        },
         { name: 'Contact', href: '/discover/contact' },
       ],
     },
