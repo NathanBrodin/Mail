@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils';
 import { Skeleton } from './ui/skeleton';
 import { useConfig } from '@/hooks/use-config';
 
+
 export default function ThemeCustomizer() {
   const [mounted, setMounted] = useState(false);
   const { setTheme: setMode, resolvedTheme: mode } = useTheme();
@@ -20,7 +21,7 @@ export default function ThemeCustomizer() {
   }, []);
 
   return (
-    <>
+    <div>
       <div className="flex items-start pt-4 md:pt-0">
         <div className="space-y-1 pr-2">
           <div className="font-semibold leading-none tracking-tight">
@@ -148,6 +149,6 @@ export default function ThemeCustomizer() {
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 }
