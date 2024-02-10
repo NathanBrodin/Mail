@@ -13,9 +13,7 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24 gap-12">
-      <ThemeWrapper
-        className="relative flex flex-col items-start gap-12"
-      >
+      <ThemeWrapper className="relative flex flex-col items-start gap-12">
         <ThemeCustomizer />
         <h1>Hello world</h1>
         <Button>Hello</Button>
