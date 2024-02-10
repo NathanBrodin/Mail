@@ -43,7 +43,7 @@ export default function Home() {
               <span>Compose</span>
             </Button>
           </div>
-          <div className='flex justify-between'>
+          <div className="flex justify-between">
             <div className="flex gap-4">
               <Link href="">
                 <Cog6ToothIcon className="w-5 h-5 text-muted-foreground" />

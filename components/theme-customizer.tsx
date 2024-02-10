@@ -10,7 +10,6 @@ import { cn } from '@/lib/utils';
 import { Skeleton } from './ui/skeleton';
 import { useConfig } from '@/hooks/use-config';
 
-
 export default function ThemeCustomizer() {
   const [mounted, setMounted] = useState(false);
   const { setTheme: setMode, resolvedTheme: mode } = useTheme();
