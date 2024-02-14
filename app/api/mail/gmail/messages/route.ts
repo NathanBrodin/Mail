@@ -18,5 +18,5 @@ export async function GET() {
     maxResults: 10,
   });
 
-  return Response.json({ messages })
+  return Response.json({ messages });
 }
