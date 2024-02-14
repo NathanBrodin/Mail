@@ -1,4 +1,4 @@
-export default function AppLogo() {
+export default function AppLogo({ className }: { className?: string }) {
   return (
     <div className="relative z-20 flex items-center text-lg font-medium">
       <svg
@@ -9,7 +9,7 @@ export default function AppLogo() {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="mr-2 h-6 w-6"
+        className={` ${className ?? 'mr-2 w-8 h-8'}`}
       >
         <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
       </svg>
