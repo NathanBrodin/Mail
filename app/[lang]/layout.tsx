@@ -8,6 +8,7 @@ import '../globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import Providers from '../providers';
 import dynamic from 'next/dynamic';
+import { TailwindIndicator } from '@/components/talwind-indicator';
 
 const PostHogPageView = dynamic(() => import('../posthog-pageview'), {
   ssr: false,
@@ -33,14 +34,15 @@ export default function RootLayout({
     <html lang={params.lang}>
       <body className={GeistSans.className}>
         <Providers>
-          <ThemeProvider>
-            {children}
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <main>{children}</main>
             <Toaster />
           </ThemeProvider>
         </Providers>
         <Analytics />
         <SpeedInsights />
         <PostHogPageView />
+        <TailwindIndicator />
       </body>
     </html>
   );
